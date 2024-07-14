@@ -1,10 +1,11 @@
-export interface IRoutePatch {
-  name: string;
-  patch: string;
-  fullPatch: string;
+export interface IRoutePath {
+  name?: string;
+  path: string;
+  fullPath: string;
 }
 
-export enum enumPatch {
+export enum enumPath {
+  HOME = "HOME",
   PROJECTS = "PROJECTS",
   SERVICES = "SERVICES",
   ABOUT = "ABOUT",

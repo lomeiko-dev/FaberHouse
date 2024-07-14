@@ -1,39 +1,43 @@
-import { enumPatch, IRoutePatch } from "./types";
+import { IRoutePath, enumPath } from "./types";
 
-export const RoutePatch: Record<enumPatch, IRoutePatch> = {
-  [enumPatch.PROJECTS]: {
+export const RoutePath: Record<enumPath, IRoutePath> = {
+  [enumPath.HOME]: {
+    path: "/home",
+    fullPath: "/home",
+  },
+  [enumPath.PROJECTS]: {
     name: "Проекты домов",
-    patch: "/projects",
-    fullPatch: "/projects",
+    path: "/projects",
+    fullPath: "/projects",
   },
-  [enumPatch.SERVICES]: {
+  [enumPath.SERVICES]: {
     name: "Услуги",
-    patch: "/services",
-    fullPatch: "/services",
+    path: "/services",
+    fullPath: "/services",
   },
-  [enumPatch.ABOUT]: {
+  [enumPath.ABOUT]: {
     name: "О компании",
-    patch: "/about",
-    fullPatch: "/about",
+    path: "/about",
+    fullPath: "/about",
   },
-  [enumPatch.WORKS]: {
+  [enumPath.WORKS]: {
     name: "Наши работы",
-    patch: "/works",
-    fullPatch: "/works",
+    path: "/works",
+    fullPath: "/works",
   },
-  [enumPatch.REVIEWS]: {
+  [enumPath.REVIEWS]: {
     name: "Отзывы",
-    patch: "/reviews",
-    fullPatch: "/reviews",
+    path: "/reviews",
+    fullPath: "/reviews",
   },
-  [enumPatch.STOCKS]: {
+  [enumPath.STOCKS]: {
     name: "Акции",
-    patch: "/stocks",
-    fullPatch: "/stocks",
+    path: "/stocks",
+    fullPath: "/stocks",
   },
-  [enumPatch.CONTACTS]: {
+  [enumPath.CONTACTS]: {
     name: "Контакты",
-    patch: "/contacts",
-    fullPatch: "/contacts",
+    path: "/contacts",
+    fullPath: "/contacts",
   },
 };
