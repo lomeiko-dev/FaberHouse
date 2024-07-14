@@ -1,0 +1,40 @@
+.mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 14.7px;
+
+    a {
+        color: var(--primary-color);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    a:hover {
+        text-decoration: underline;
+
+    }
+}
+
+.button {
+    padding: 17px 0;
+    width: 240px;
+    background-color: rgba($color: #A985674D, $alpha: .3);
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.button:hover{
+    background-color: rgba($color: #A985674D, $alpha: .2);
+}
+
+.button_call{
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .button{
+        width: 180px;
+    }
+}

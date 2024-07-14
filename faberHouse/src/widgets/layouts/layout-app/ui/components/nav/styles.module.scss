@@ -1,0 +1,16 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    a{
+        font-size: 18px;
+        font-weight: 700;
+        color: #A98567;
+        transition: .2s;
+    }
+
+    a:hover{
+        color: rgba($color: #A98567, $alpha: .5);
+    }
+}

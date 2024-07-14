@@ -1,0 +1,33 @@
+.header {
+    background-color: var(--bg-header);
+    height: 80px;
+
+    .content {
+        position: relative;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .slice{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+        .button{
+            width: 180px;
+        }
+    }
+    @media (max-width: 460px) {
+        .logotype{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

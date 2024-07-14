@@ -1,9 +1,10 @@
+import { LayoutApp } from 'widgets/layouts/layout-app'
 import './style/index.css'
 
 export const App = () => {
     return (
-        <div>
-            new APP
-        </div>
+        <LayoutApp>
+            абаба
+        </LayoutApp>
     )
 }
