@@ -1,0 +1,115 @@
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 777px;
+
+    .content {
+        background-color: var(--main-color);
+        width: 100%;
+        max-width: 540px;
+        height: 100%;
+
+        .container {
+            padding-top: 111px;
+            width: 100%;
+            max-width: 280px;
+            margin: 0 auto;
+            height: 100%;
+        }
+
+        h1 {
+            margin-top: 15px;
+            color: white;
+            font-size: 49px;
+            font-weight: 500;
+            line-height: 56px;
+        }
+
+        h2 {
+            margin-top: 17px;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+    }
+
+    .illustration {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column-reverse;
+
+        .content {
+            max-width: 100%;
+
+            .container {
+                padding-top: 20px;
+                max-width: 90%;
+            }
+
+            h1 {
+                margin-top: 10px;
+                font-size: 38px;
+                line-height: 40px;
+            }
+    
+            h2 {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+
+        .info {
+            height: 150px;
+
+            .info_inner {
+
+                .indicator {
+                    opacity: 0;
+                }
+
+                .info_content {
+                    padding-top: 15px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .intro{
+        .content{
+            .container{
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 465px) {
+    .intro {
+        .content {
+            h1 {
+                font-size: 24px;
+                line-height: 30px;
+            }
+    
+            h2 {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+    }
+}

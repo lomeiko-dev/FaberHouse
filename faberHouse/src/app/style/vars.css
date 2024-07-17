@@ -1,5 +1,7 @@
 :root{
     --bg-header: #17181D;
-    --primary-color: #FFF4DE;
+    --main-color: #00AC78;
+    --main-color-hover: #0b7253;
+    --primary-app-color: #FFF4DE;
     --secondary-color: #A98567;
 }

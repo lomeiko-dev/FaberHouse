@@ -1,0 +1,60 @@
+.overlay{
+    position: fixed;
+    z-index: -100;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .5);
+
+    .side{
+        position: absolute;
+        top: 0;
+        transform: translateX(-300px);
+        height: 100%;
+        width: 300px;
+        transition: .2s;
+        overflow: hidden;
+
+        .cross{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: transparent;
+
+            div{
+                position: relative;
+                width: 30px;
+                height: 30px;
+
+                .line{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 3px;
+                    height: 30px;
+                    background-color: var(--primary-app-color);
+                }
+
+                .line:nth-child(1){
+                    transform: rotate(45deg);
+                }
+
+                .line:nth-child(2){
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+.overlay_show{
+    z-index: 999;
+    opacity: 1;
+
+    .side{
+        transform: translateX(0);
+    }
+}

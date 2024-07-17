@@ -2,8 +2,9 @@ import { memo, useState } from "react";
 import style from "./styles.module.scss";
 import { Header } from "./components/header/Header";
 import classNames from "classnames";
-import { Sidebar } from "primereact/sidebar";
+import { Sidebar } from "shared/ui/sidebar";
 import { SidebarContent } from "./components/sidebar/SidebarContent";
+import { useWindowSize } from "@reactuses/core";
 
 interface IProps {
   children: React.ReactNode;
@@ -12,15 +13,19 @@ interface IProps {
 export const LayoutApp: React.FC<IProps> = memo((props) => {
   const { children } = props;
 
-  const [visible, setVisible] = useState<boolean>(false)
+  const [visible, setVisible] = useState<boolean>(false);
+  const { width } = useWindowSize();
 
   return (
     <div className={classNames(style.layout)}>
-      <Header burgerMenuClick={() => setVisible(true)}/>
-      <Sidebar visible={visible} onHide={() => setVisible(false)}>
-        <SidebarContent/>
+      {width < 1140 && <Header burgerMenuClick={() => setVisible(true)} />}
+      <Sidebar isVisible={visible} onClosed={() => setVisible(false)}>
+        <SidebarContent className={style.sidebar}/>
       </Sidebar>
-      {children}
+      <div className={style.content}>
+        {width > 1140 && <SidebarContent />}
+        {children}
+      </div>
     </div>
   );
 });
