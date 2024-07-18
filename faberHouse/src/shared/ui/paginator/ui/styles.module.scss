@@ -1,0 +1,22 @@
+.paginator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 55px;
+
+    .left_icon{
+        transform: scale(-1);
+    }
+    .right_icon{
+        transform: scale(1);
+    }
+
+    .nums{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+    }
+}
