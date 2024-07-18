@@ -4,7 +4,7 @@ import { Intro } from "./components/intro/Intro";
 import { Guarantees } from "widgets/guarantees";
 import { Container } from "shared/ui/container";
 import { About } from "widgets/about";
-import { IProject, ProjectItem } from "entities/project";
+import { IProject, ProjectCard, ProjectItem } from "entities/project";
 
 const project1: IProject = {
   title: 'Дом из профилированного бруса 6.0м×9.0м ЛД-48',
@@ -35,7 +35,8 @@ const HomePage = () => {
       <ClassesProject />
       <Container>
         <Guarantees />
-        <ProjectItem project={project1} cardPosition="right"/>
+        {/* <ProjectItem project={project1} cardPosition="right"/> */}
+        <ProjectCard project={project1}/>
         <About />
       </Container>
     </div>
