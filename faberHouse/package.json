@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@reactuses/core": "^5.0.15",
+    "@reduxjs/toolkit": "^2.2.6",
     "classnames": "^2.5.1",
     "primereact": "^10.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
     "react-router-dom": "^6.24.1"
   },
   "devDependencies": {
