@@ -1,6 +1,7 @@
 .sidebar{
     background-color: var(--bg-header);
     width: 300px;
+    min-width: 300px;
     overflow-x: hidden;
 
     .container{

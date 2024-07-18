@@ -4,7 +4,7 @@ import { Intro } from "./components/intro/Intro";
 import { Guarantees } from "widgets/guarantees";
 import { Container } from "shared/ui/container";
 import { About } from "widgets/about";
-import { ProjectListPreview } from "widgets/project-list/ui";
+import { ProjectListPreview } from "widgets/project-list";
 
 const HomePage = () => {
   return (

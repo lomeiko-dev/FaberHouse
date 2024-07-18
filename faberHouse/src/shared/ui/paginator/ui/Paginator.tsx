@@ -2,15 +2,17 @@ import { useEffect, useState } from "react";
 import { Button } from "./components/button/Button";
 import style from "./styles.module.scss";
 import ArrowIcon from "shared/assets/icons/arrow-right-2.svg?react";
+import classNames from "classnames";
 
 interface IProps {
   pageCount: number;
   defaultActivePage: number;
-  setPage: (page: number) => void
+  setPage: (page: number) => void;
+  className?: string;
 }
 
 export const Paginator: React.FC<IProps> = (props) => {
-  const { pageCount, defaultActivePage, setPage } = props;
+  const { pageCount, defaultActivePage, setPage, className } = props;
 
   const [activePage, setActivePage] = useState(defaultActivePage);
 
@@ -18,41 +20,37 @@ export const Paginator: React.FC<IProps> = (props) => {
 
   const changeInterval = () => {
     setArray(() => {
-        let newArray = []
-        let start = activePage;
-        let end = activePage+3;
+      let newArray = [];
+      let start = activePage;
+      let end = activePage + 3;
 
-        if(activePage >= 2)
-            start = activePage - 1
+      if (activePage >= 2) start = activePage - 1;
 
-        if(activePage+3 > pageCount)
-            end = pageCount+1
+      if (activePage + 3 > pageCount) end = pageCount + 1;
 
-        for(let i = start; i < end; i++) {
-            newArray.push(i)
-        }
+      for (let i = start; i < end; i++) {
+        newArray.push(i);
+      }
 
-        return newArray
+      return newArray;
     });
   };
 
   const incrementPage = () => {
-    if(activePage < pageCount)
-        setActivePage(prev => prev+1)
-  }
+    if (activePage < pageCount) setActivePage((prev) => prev + 1);
+  };
 
   const dicrementPage = () => {
-    if(activePage != 1)
-        setActivePage(prev => prev-1)
-  }
+    if (activePage != 1) setActivePage((prev) => prev - 1);
+  };
 
   useEffect(() => {
-    changeInterval()
-    setPage(activePage)
-  }, [activePage])
+    changeInterval();
+    setPage(activePage);
+  }, [activePage]);
 
   return (
-    <div className={style.paginator}>
+    <div className={classNames(style.paginator, className)}>
       <Button onClick={dicrementPage}>
         <ArrowIcon className={style.left_icon} />
         <p>Назад</p>
@@ -66,7 +64,7 @@ export const Paginator: React.FC<IProps> = (props) => {
         {pageCount > 3 && (
           <>
             {pageCount > 4 && (
-              <Button onClick={() => setActivePage(Math.round(pageCount/2))}>
+              <Button onClick={() => setActivePage(Math.round(pageCount / 2))}>
                 <p>...</p>
               </Button>
             )}
