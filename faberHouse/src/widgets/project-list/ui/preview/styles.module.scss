@@ -1,0 +1,16 @@
+.wrap {
+    h2 {
+        font-size: 49px;
+        font-weight: 500;
+        line-height: 56px;
+        width: 100%;
+        max-width: 569px;
+    }
+
+    .list{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+    }
+}

@@ -11,8 +11,8 @@ export const Guarantees = () => {
         <CheckIcon />
         <h1>Гарантии нашей компании</h1>
         <div className={style.list}>
-          {guaranteeConfig.map((item) => (
-            <ItemGuarantee guarantee={item} />
+          {guaranteeConfig.map((item, index) => (
+            <ItemGuarantee key={index} guarantee={item} />
           ))}
         </div>
       </div>

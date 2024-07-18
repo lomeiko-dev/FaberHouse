@@ -2,14 +2,10 @@ import style from "./styles.module.scss";
 import { advantageList } from "../model/config/advantage-list";
 import { ItemTitle } from "./components/item-title/ItemTitle";
 import { offerList, offerListSecondary } from "../model/config/offer-list";
-import {useWindowSize} from '@reactuses/core'
 import illustration from "shared/assets/img/illustration-1.webp";
 import MobileIcon from "shared/assets/icons/mobile.svg?react";
 
 export const About = () => {
-
-  const {width} = useWindowSize()
-
   return (
     <div className={style.about}>
       <div className={style.block}>
@@ -22,8 +18,8 @@ export const About = () => {
         <div className={style.advantages}>
           <h3>Преимущества сотрудничества с нами</h3>
           <div className={style.list}>
-            {advantageList.map((item) => (
-              <ItemTitle title={item} />
+            {advantageList.map((item, index) => (
+              <ItemTitle key={index} title={item} />
             ))}
           </div>
         </div>
@@ -36,10 +32,12 @@ export const About = () => {
         <img src={illustration} alt="illustration" />
         <div className={style.offers}>
           <h3 className={style.title}>Предложение компании Legno Domus</h3>
-          <p className={style.sub_title}>Вы можете заказать строительство следующих вариантов деревянных домов и коттеджей:</p>
+          <p className={style.sub_title}>
+            Вы можете заказать строительство следующих вариантов деревянных домов и коттеджей:
+          </p>
           <div className={style.list}>
-            {offerList.map((item) => (
-              <ItemTitle title={item} />
+            {offerList.map((item, index) => (
+              <ItemTitle key={index} title={item} />
             ))}
           </div>
           <p className={style.title_secondary}>
@@ -47,14 +45,14 @@ export const About = () => {
             деревянных домов, мы выполняем следующие виды работ:
           </p>
           <div className={style.list}>
-            {offerListSecondary.map((item) => (
-              <ItemTitle title={item} />
+            {offerListSecondary.map((item, index) => (
+              <ItemTitle key={index} title={item} />
             ))}
           </div>
         </div>
         <div className={style.adress}>
           <div className={style.mobile}>
-            <MobileIcon className={style.icon}/>
+            <MobileIcon className={style.icon} />
             <p>+7 495 902 61 04</p>
           </div>
           <p>Москва, Каширское шоссе, владение 63, корпус 1, строение 52 Режим работы выставки с 10:00 до 20:00</p>
