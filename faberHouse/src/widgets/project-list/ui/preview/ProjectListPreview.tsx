@@ -1,6 +1,7 @@
-import { ProjectItem, useGetPageProjectsQuery } from "entities/project";
+import { ProjectItem, SkeletonItem, useGetPageProjectsQuery } from "entities/project";
 import style from "./styles.module.scss";
 import classNames from "classnames";
+import { Error } from "shared/ui/error";
 
 interface IProps {
   title?: string;
@@ -13,6 +14,20 @@ export const ProjectListPreview: React.FC<IProps> = (props) => {
   const { count, title, className, params } = props;
 
   const { data, isLoading, isError } = useGetPageProjectsQuery({ page: 1, limit: count, params });
+
+  if(isLoading){
+    return(
+      <div className={style.list}>
+        {Array(count).fill('').map((_, index) => <SkeletonItem key={index}/>)}
+      </div>
+    )
+  }
+
+  if(isError){
+    return(
+      <Error message="Сервер не отвечает"/>
+    )
+  }
 
   return (
     <div className={classNames(style.wrap, className)}>

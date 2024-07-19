@@ -9,10 +9,11 @@ interface IProps {
   defaultActivePage: number;
   setPage: (page: number) => void;
   className?: string;
+  isMobile?: boolean;
 }
 
 export const Paginator: React.FC<IProps> = (props) => {
-  const { pageCount, defaultActivePage, setPage, className } = props;
+  const { pageCount, defaultActivePage, setPage, className, isMobile } = props;
 
   const [activePage, setActivePage] = useState(defaultActivePage);
 
@@ -52,31 +53,43 @@ export const Paginator: React.FC<IProps> = (props) => {
   return (
     <div className={classNames(style.paginator, className)}>
       <Button onClick={dicrementPage}>
-        <ArrowIcon className={style.left_icon} />
-        <p>Назад</p>
+        <p>
+          <ArrowIcon className={style.left_icon} />
+        </p>
+        {!isMobile && <p>Назад</p>}
       </Button>
       <div className={style.nums}>
-        {array.map((item, index) => (
-          <Button key={index} isActive={item === activePage} onClick={() => setActivePage(item)}>
-            <p>{item}</p>
+        {isMobile ? (
+          <Button onClick={() => null}>
+            <p>{activePage}</p>
           </Button>
-        ))}
-        {pageCount > 3 && (
+        ) : (
           <>
-            {pageCount > 4 && (
-              <Button onClick={() => setActivePage(Math.round(pageCount / 2))}>
-                <p>...</p>
+            {array.map((item, index) => (
+              <Button key={index} isActive={item === activePage} onClick={() => setActivePage(item)}>
+                <p>{item}</p>
               </Button>
+            ))}
+            {pageCount > 3 && (
+              <>
+                {pageCount > 4 && (
+                  <Button onClick={() => setActivePage(Math.round(pageCount / 2))}>
+                    <p>...</p>
+                  </Button>
+                )}
+                <Button onClick={() => setActivePage(pageCount)}>
+                  <p>{pageCount}</p>
+                </Button>
+              </>
             )}
-            <Button onClick={() => setActivePage(pageCount)}>
-              <p>{pageCount}</p>
-            </Button>
           </>
         )}
       </div>
       <Button onClick={incrementPage}>
-        <p>Вперед</p>
-        <ArrowIcon className={style.right_icon} />
+        {!isMobile && <p>Вперед</p>}
+        <p>
+          <ArrowIcon className={style.right_icon} />
+        </p>
       </Button>
     </div>
   );

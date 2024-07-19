@@ -7,10 +7,32 @@
         max-width: 569px;
     }
 
+}
+
+.list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+@media (max-width: 768px) {
+    .wrap{
+        h2{
+            font-size: 32px;
+        }
+    }
+
     .list{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 120px;
+        gap: 70px;
+    }
+}
+
+
+@media (max-width: 358px) {
+    .wrap{
+        h2{
+            font-size: 24px;
+        }
     }
 }

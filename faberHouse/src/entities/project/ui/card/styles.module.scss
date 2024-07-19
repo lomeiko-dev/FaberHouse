@@ -28,33 +28,43 @@
             align-items: center;
             gap: 10px;
 
-            .square {
+            .slice {
                 display: flex;
-                justify-content: center;
-                background: #EFEBDE;
-                font-size: 15px;
-                font-weight: 500;
-                line-height: 25px;
-                padding: 13px 0;
-                width: 75px;
-                border-radius: 3px;
+                flex-direction: row;
+                gap: 10px;
+
+                .square {
+                    display: flex;
+                    justify-content: center;
+                    background: #EFEBDE;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 25px;
+                    padding: 13px 0;
+                    width: 75px;
+                    min-width: 75px;
+                    border-radius: 3px;
+                }
+
+                .price {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 25px;
+
+                    border: 1px solid #00000033;
+                    border-radius: 3px;
+                    width: 100%;
+                    max-width: 140px;
+                    min-width: 140px;
+                    padding: 13px 0;
+                }
             }
 
-            .price {
-                display: flex;
-                justify-content: center;
-                align-items: center;
 
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 25px;
-
-                border: 1px solid #00000033;
-                border-radius: 3px;
-                width: 100%;
-                max-width: 140px;
-                padding: 13px 0;
-            }
 
             button {
                 background-color: transparent;
@@ -68,7 +78,8 @@
                 max-width: 175px;
                 transition: .2s;
             }
-            button:hover{
+
+            button:hover {
                 background-color: rgba($color: #000000, $alpha: .2);
             }
         }
@@ -91,7 +102,32 @@
 }
 
 @keyframes loading {
-  to {
-    background-position: 215px 0, 0 0, 15px 250px, 15px 280px;
-  }
+    to {
+        background-position: 215px 0, 0 0, 15px 250px, 15px 280px;
+    }
+}
+
+@media (max-width: 475px) {
+    .card {
+        height: fit-content;
+
+        .content {
+            .block {
+                align-items: start;
+                flex-direction: column;
+                .slice {
+                    width: 100%;
+                    .price {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+
+                button{
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }

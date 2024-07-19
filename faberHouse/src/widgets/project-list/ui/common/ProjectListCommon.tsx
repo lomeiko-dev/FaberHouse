@@ -4,6 +4,7 @@ import { ProjectCard, SkeletonCard, useGetPageProjectsQuery } from "entities/pro
 import { useState } from "react";
 import { Paginator } from "shared/ui/paginator";
 import { Error } from "shared/ui/error";
+import { useWindowSize } from "@reactuses/core";
 
 interface IProps {
   count: number;
@@ -15,23 +16,27 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
   const { count, className, params } = props;
 
   const [page, setPage] = useState(1);
-
   const { data, isLoading, isError } = useGetPageProjectsQuery({ page: page, limit: count, params });
+  const { width } = useWindowSize();
 
   if (isLoading) {
     return (
       <div className={style.list}>
-        {Array(count).fill('').map((_, index) => <SkeletonCard key={index}/>)}
+        {Array(count)
+          .fill("")
+          .map((_, index) => (
+            <SkeletonCard key={index} />
+          ))}
       </div>
     );
   }
 
-  if (isError){
-    return(
+  if (isError) {
+    return (
       <div>
-        <Error message="Сервер не отвечает"/>
+        <Error message="Сервер не отвечает" />
       </div>
-    )
+    );
   }
 
   return (
@@ -42,10 +47,11 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
         ))}
       </div>
       <Paginator
+        isMobile={width < 680}
         className={style.paginator}
         defaultActivePage={1}
         setPage={setPage}
-        pageCount={Math.round((data?.totalCount || 0) / count)}
+        pageCount={Math.round((data?.totalCount || 0) / count)+1}
       />
     </div>
   );

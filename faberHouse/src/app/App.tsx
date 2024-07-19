@@ -7,8 +7,8 @@ import "primereact/resources/primereact.min.css";
 
 export const App = () => {
   return (
-    <LayoutApp>
-      <Routing />
+      <LayoutApp>
+        <Routing />
     </LayoutApp>
   );
 };

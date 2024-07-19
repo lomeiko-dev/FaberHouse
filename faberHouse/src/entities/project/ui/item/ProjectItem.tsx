@@ -36,13 +36,13 @@ export const ProjectItem: React.FC<IProps> = (props) => {
         <div className={style.photo_inner}>
           <div className={style.slider}>
             <div className={style.slider_inner}>
-              <ImagesIcon className={style.icon} />
               <button onClick={upIndexPhotoHandler}>
                 <ArrowRightIcon className={style.arrow} />
               </button>
               <p>
                 {photoIndex + 1} — {project.images.length}
               </p>
+              <ImagesIcon className={style.icon} />
             </div>
           </div>
         </div>

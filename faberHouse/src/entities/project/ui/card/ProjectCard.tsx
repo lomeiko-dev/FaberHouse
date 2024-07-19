@@ -16,8 +16,10 @@ export const ProjectCard: React.FC<IProps> = (props) => {
       <div className={style.content}>
         <h3>{project.title}</h3>
         <div className={style.block}>
-          <p className={style.square}>{project.square} м2</p>
-          <p className={style.price}>{project.price} ₽</p>
+          <div className={style.slice}>
+            <p className={style.square}>{project.square} м2</p>
+            <p className={style.price}>{project.price} ₽</p>
+          </div>
           <button>Подробности</button>
         </div>
       </div>
