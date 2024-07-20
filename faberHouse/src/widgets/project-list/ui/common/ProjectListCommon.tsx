@@ -22,16 +22,6 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
 
   const [isHideForm, setHideForm] = useState(false);
 
-  const getOffsetCards = () => {
-    if (data?.projects) {
-      const result = (data?.projects.length || 0) % 3;
-
-      return result !== 0 ? result - 1 : result;
-    }
-
-    return 0;
-  };
-
   if (isLoading) {
     return (
       <div className={style.list}>
@@ -67,18 +57,13 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
         {data?.projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
-        {Array(getOffsetCards())
-          .fill("")
-          .map((_, index) => (
-            <ProjectCard key={index} className={style.null_slot} />
-          ))}
       </div>
       <Paginator
         isMobile={width < 680}
         className={style.paginator}
         defaultActivePage={1}
         setPage={setPage}
-        pageCount={Math.round((data?.totalCount || 0) / count) + 1}
+        pageCount={Math.round((data?.totalCount || 0) / count)}
       />
     </div>
   );
