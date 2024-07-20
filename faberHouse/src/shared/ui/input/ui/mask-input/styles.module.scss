@@ -1,0 +1,22 @@
+.input {
+    background-color: white;
+    border: 1px solid #00000033;
+    border-radius: 0;
+    padding: 12px 0 11px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    color: black;
+    user-select: none;
+    outline: none;
+}
+
+.input:focus {
+    outline: none !important;
+    box-shadow: none;
+
+}
+
+.input::placeholder {
+    color: black;
+}
