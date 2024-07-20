@@ -5,13 +5,14 @@ import classNames from "classnames";
 
 interface IProps {
   className?: string;
+  isError?: boolean
   mask: string;
   placeholder?: string;
   getValue: (value: string) => void
 }
 
 export const MaskInput: React.FC<IProps> = (props) => {
-  const { mask, className, placeholder, getValue } = props;
+  const { mask, className, placeholder, getValue, isError } = props;
 
   const [value, setValue] = useState("");
 
@@ -19,9 +20,13 @@ export const MaskInput: React.FC<IProps> = (props) => {
     getValue(value)
   }, [value])
 
+  const mods = {
+    [style.error_border]: isError
+  }
+
   return (
     <InputMask
-      className={classNames(style.input, className)}
+      className={classNames(style.input, className, mods)}
       value={value}
       onChange={(e: any) => setValue(e.target.value)}
       mask={mask}

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Paginator } from "shared/ui/paginator";
 import { Error } from "shared/ui/error";
 import { useWindowSize } from "@reactuses/core";
+import { ProjectFrom, ProjectModal } from "features/project-form";
 
 interface IProps {
   count: number;
@@ -19,15 +20,17 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
   const { data, isLoading, isError } = useGetPageProjectsQuery({ page: page, limit: count, params });
   const { width } = useWindowSize();
 
-  const getOffsetCards = () => {
-    if(data?.projects){
-      const result = (data?.projects.length || 0) % 3
+  const [isHideForm, setHideForm] = useState(false);
 
-      return result !== 0 ? result-1 : result
+  const getOffsetCards = () => {
+    if (data?.projects) {
+      const result = (data?.projects.length || 0) % 3;
+
+      return result !== 0 ? result - 1 : result;
     }
 
-    return 0
-  }
+    return 0;
+  };
 
   if (isLoading) {
     return (
@@ -52,6 +55,15 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
   return (
     <div className={classNames(style.wrap, className)}>
       <div className={style.list}>
+        {!isHideForm && (
+          <>
+            {width > 458 ? (
+              <ProjectFrom onSubmit={(value) => setHideForm(value)} />
+            ) : (
+              <ProjectModal onSubmit={(value) => setHideForm(value)} />
+            )}
+          </>
+        )}
         {data?.projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}

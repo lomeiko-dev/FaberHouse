@@ -9,6 +9,15 @@
     color: black;
     user-select: none;
     outline: none;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.error_border{
+    border: 1px solid red;
+}
+.error_border::placeholder{
+    color: red !important;
 }
 
 .input::placeholder {

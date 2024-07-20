@@ -5,12 +5,13 @@ import classNames from "classnames";
 
 interface IProps {
   className?: string;
+  isError?: boolean;
   placeholder?: string;
   getFiles: (files: FileList | null) => void;
 }
 
 export const FileInput: React.FC<IProps> = (props) => {
-  const { className, placeholder, getFiles } = props;
+  const { className, placeholder, getFiles, isError } = props;
 
   const [value, setValue] = useState("");
   const refInput = useRef<HTMLInputElement | null>(null);
@@ -23,8 +24,12 @@ export const FileInput: React.FC<IProps> = (props) => {
     refInput.current?.showPicker();
   };
 
+  const mods = {
+    [style.error_border]: isError,
+  };
+
   return (
-    <div onClick={onShowFileViewerHandler} className={classNames(style.wrap, className)}>
+    <div onClick={onShowFileViewerHandler} className={classNames(style.wrap, className, mods)}>
       <input
         ref={refInput}
         type="file"
