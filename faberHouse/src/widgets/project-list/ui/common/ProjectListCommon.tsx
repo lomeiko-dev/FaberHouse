@@ -1,26 +1,42 @@
 import classNames from "classnames";
 import style from "./styles.module.scss";
 import { ProjectCard, SkeletonCard, useGetPageProjectsQuery } from "entities/project";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Paginator } from "shared/ui/paginator";
 import { Error } from "shared/ui/error";
 import { useWindowSize } from "@reactuses/core";
 import { ProjectFrom, ProjectModal } from "features/project-form";
 
 interface IProps {
-  count: number;
   className?: string;
   params?: string;
 }
 
 export const ProjectListCommon: React.FC<IProps> = (props) => {
-  const { count, className, params } = props;
+  const { className, params } = props;
 
   const [page, setPage] = useState(1);
+  const [count, setCount] = useState(17);
   const { data, isLoading, isError } = useGetPageProjectsQuery({ page: page, limit: count, params });
   const { width } = useWindowSize();
 
   const [isHideForm, setHideForm] = useState(false);
+  const refAnchor = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (isHideForm) {
+      setCount(18);
+    }
+  }, [isHideForm]);
+
+  useEffect(() => {
+    setCount(page > 1 ? 18 : 17);
+
+    if (refAnchor.current)
+      refAnchor.current.scrollIntoView({
+        behavior: "smooth",
+      });
+  }, [page]);
 
   if (isLoading) {
     return (
@@ -44,8 +60,9 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
 
   return (
     <div className={classNames(style.wrap, className)}>
+      <div ref={refAnchor}></div>
       <div className={style.list}>
-        {!isHideForm && (
+        {!isHideForm && page === 1 && (
           <>
             {width > 458 ? (
               <ProjectFrom onSubmit={(value) => setHideForm(value)} />
@@ -63,7 +80,7 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
         className={style.paginator}
         defaultActivePage={1}
         setPage={setPage}
-        pageCount={Math.round((data?.totalCount || 0) / count)}
+        pageCount={Math.ceil((data?.totalCount || 0) / count)}
       />
     </div>
   );

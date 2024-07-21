@@ -13,7 +13,7 @@ const ProjectsPage = () => {
           <HouseIcon className={style.icon}/>
           <h1>Наши проекты домов, бань и коттеджей из дерева</h1>
         </div>
-        <ProjectListCommon className={style.list} count={17} />
+        <ProjectListCommon className={style.list} />
         <Guarantees/>
         <About/>
       </Container>

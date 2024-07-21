@@ -72,7 +72,7 @@ export const Paginator: React.FC<IProps> = (props) => {
             ))}
             {pageCount > 3 && (
               <>
-                {pageCount > 4 && (
+                {pageCount >= 4 && (
                   <Button onClick={() => setActivePage(Math.round(pageCount / 2))}>
                     <p>...</p>
                   </Button>
