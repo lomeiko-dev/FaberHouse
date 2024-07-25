@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import style from "./styles.module.scss";
-import { ProjectCard, SkeletonCard, useGetPageProjectsQuery } from "entities/project";
+import { ProjectCard, SkeletonCard, useGetPageProjectsQuery } from "entities/project-house";
 import { useEffect, useRef, useState } from "react";
 import { Paginator } from "shared/ui/paginator";
 import { Error } from "shared/ui/error";
@@ -22,6 +22,14 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
 
   const [isHideForm, setHideForm] = useState(false);
   const refAnchor = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    console.log(data?.totalCount)
+  }, [data?.totalCount])
+
+  useEffect(() => {
+    setPage(1)
+  }, [params])
 
   useEffect(() => {
     if (isHideForm) {

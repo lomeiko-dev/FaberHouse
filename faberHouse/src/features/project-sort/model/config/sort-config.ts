@@ -7,25 +7,25 @@ import bathhouse from "shared/assets/img/bathhouse.webp";
 export const classesConfig: ISortItem[] = [
   {
     title: "Дома из бруса",
-    value: "",
+    option: "technology_like=Брус",
     illustration: tree,
     price: 450000,
   },
   {
     title: "Дома из бревна",
-    value: "",
+    option: "technology_like=Бревно",
     illustration: timber,
     price: 950000,
   },
   {
     title: "Каркасные дома",
-    value: "",
+    option: "technology_like=Каркас",
     illustration: skeleton,
     price: 1450000,
   },
   {
     title: "Бани из дерева",
-    value: "",
+    option: "typeHouse_like=bathhouse",
     illustration: bathhouse,
     price: 271000,
   },
@@ -34,18 +34,18 @@ export const classesConfig: ISortItem[] = [
 export const sortConfig: ISortItem[] = [
   {
     title: "по умолчанию",
-    value: "",
+    option: "",
   },
   {
     title: "сначала популярное",
-    value: "",
+    option: "_sort=popularCount&_order=desc",
   },
   {
     title: "сначала дорогое",
-    value: "",
+    option: "_sort=price&_order=desc",
   },
   {
     title: "сначала дешевое",
-    value: "",
+    option: "_sort=price&_order=asc",
   },
 ];

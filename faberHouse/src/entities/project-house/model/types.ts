@@ -1,6 +1,8 @@
-export interface  IProject {
+export interface IProject {
   id?: number;
   title: string;
+  typeHouse: string;
+  PopularCount: number
   series: string;
   technology: string;
   size: string;

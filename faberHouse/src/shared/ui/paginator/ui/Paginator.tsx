@@ -48,7 +48,7 @@ export const Paginator: React.FC<IProps> = (props) => {
   useEffect(() => {
     changeInterval();
     setPage(activePage);
-  }, [activePage]);
+  }, [activePage, pageCount]);
 
   return (
     <div className={classNames(style.paginator, className)}>

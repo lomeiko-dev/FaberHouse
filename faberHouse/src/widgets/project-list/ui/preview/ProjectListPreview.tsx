@@ -1,4 +1,4 @@
-import { ProjectItem, SkeletonItem, useGetPageProjectsQuery } from "entities/project";
+import { ProjectItem, SkeletonItem, useGetPageProjectsQuery } from "entities/project-house";
 import style from "./styles.module.scss";
 import classNames from "classnames";
 import { Error } from "shared/ui/error";

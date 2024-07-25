@@ -44,14 +44,14 @@ const projectOfferSlice = createSlice({
       state.isErrorPhone = !Boolean(form.phone);
       state.isErrorFile = !Boolean(form.fileBase64);
 
-      if (state.isErrorFile && state.isErrorName && state.isErrorPhone) {
-        state.isErrors = true;
-      } else {
+      if (!state.isErrorFile && !state.isErrorName && !state.isErrorPhone) {
         state.isErrors = false;
+      } else {
+        state.isErrors = true;
       }
     },
   },
 });
 
 export const projectOfferReducer = projectOfferSlice.reducer;
-export const { setFile, setName, setPhone, checkForm } = projectOfferSlice.actions;
+export const { setFile, setName, setPhone, checkForm, clearForm } = projectOfferSlice.actions;
