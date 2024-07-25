@@ -1,0 +1,17 @@
+.custom-dropdown {
+    padding: 12px 0 12px 15px;
+    box-shadow: none;
+    outline: none;
+
+    .p-dropdown-label {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+}
+
+.custom-dropdown-panel{
+    .p-dropdown-item-label{
+        padding: 20px;
+    }
+}
