@@ -6,9 +6,11 @@ import { Guarantees } from "widgets/guarantees";
 import { About } from "widgets/about";
 import { ClassesProjectItems, SortDrawer, sortSelection } from "features/project-sort";
 import { useAppSelector } from "shared/lib/hooks/useAppSelector";
+import { Filter, filterSelector } from "features/house-filter";
 
 const ProjectsPage = () => {
-  const store = useAppSelector(sortSelection);
+  const storeSort = useAppSelector(sortSelection);
+  const storeFilter = useAppSelector(filterSelector);
 
   return (
     <div className={style.page}>
@@ -18,10 +20,13 @@ const ProjectsPage = () => {
           <h1>Наши проекты домов, бань и коттеджей из дерева</h1>
         </div>
       </Container>
-      <ClassesProjectItems defaultSelectIndex={store.selectIndexClass+1}/>
+      <ClassesProjectItems defaultSelectIndex={storeSort.selectIndexClass + 1} />
+      <div className={style.filter_wrap}>
+        <Filter className={style.filter} />
+      </div>
       <Container className={style.content}>
         <SortDrawer className={style.sort} />
-        <ProjectListCommon className={style.list} params={store.queryString} />
+        <ProjectListCommon className={style.list} params={`${storeSort.queryString}&${storeFilter.fullFilterString}`} />
         <Guarantees />
         <About />
       </Container>

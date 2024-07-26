@@ -22,11 +22,7 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
 
   const [isHideForm, setHideForm] = useState(false);
   const refAnchor = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    console.log(data?.totalCount)
-  }, [data?.totalCount])
-
+  
   useEffect(() => {
     setPage(1)
   }, [params])

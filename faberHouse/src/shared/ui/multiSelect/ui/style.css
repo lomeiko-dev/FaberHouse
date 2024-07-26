@@ -1,0 +1,18 @@
+.custom-multiselect {
+    padding: 12px 0 12px 15px;
+    box-shadow: none;
+    outline: none;
+
+    .p-multiselect-label {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+}
+
+.custom-multiselect-panel{
+    .p-multiselect-item{
+        padding: 20px;
+        gap: 10px;
+    }
+}

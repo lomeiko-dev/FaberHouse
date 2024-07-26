@@ -1,18 +1,44 @@
-.wrapper{
+.wrapper {
     border: 1px solid rgba($color: #A9856780, $alpha: 50%);
     border-radius: 3px;
     padding: 16px 20px;
     display: flex;
     flex-direction: row;
 
-    input{
+    input {
         width: 100%;
         color: var(--secondary-color);
         font-size: 15px;
         font-weight: 500;
     }
-    
-    input::-webkit-input-placeholder{
+
+    input::-webkit-input-placeholder {
         color: var(--secondary-color);
+    }
+
+    button{
+        background-color: transparent;
+    }
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 20px auto;
+
+    button {
+        border: 1px solid #000000;
+        background-color: transparent;
+        border-radius: 3px;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 30px;
+        transition: .2s;
+    }
+    button:hover{
+        background-color: #d4d4d4;
     }
 }
