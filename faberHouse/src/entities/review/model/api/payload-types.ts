@@ -6,6 +6,6 @@ export interface IPayloadProps {
 }
 
 export interface IPayloadData {
-  projects: IReview[];
+  reviews: IReview[];
   totalCount: number;
 }

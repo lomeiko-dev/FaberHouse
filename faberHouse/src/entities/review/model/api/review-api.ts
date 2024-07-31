@@ -12,7 +12,7 @@ export const ReviewApi = createApi({
 
       transformResponse: (response: IReview[], meta) => {
         const totalCount = meta?.response?.headers.get("x-total-count");
-        return { projects: response, totalCount: Number(totalCount) };
+        return { reviews: response, totalCount: Number(totalCount) };
       },
     }),
   }),

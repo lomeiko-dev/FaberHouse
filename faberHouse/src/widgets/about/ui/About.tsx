@@ -4,10 +4,17 @@ import { ItemTitle } from "./components/item-title/ItemTitle";
 import { offerList, offerListSecondary } from "../model/config/offer-list";
 import illustration from "shared/assets/img/illustration-1.webp";
 import MobileIcon from "shared/assets/icons/mobile.svg?react";
+import classNames from "classnames";
 
-export const About = () => {
+interface IProps {
+  className?: string;
+}
+
+export const About: React.FC<IProps> = (props) => {
+  const { className } = props;
+
   return (
-    <div className={style.about}>
+    <div className={classNames(style.about, className)}>
       <div className={style.block}>
         <h2 className={style.title}>Несколько слов о нас</h2>
         <p className={style.description}>
