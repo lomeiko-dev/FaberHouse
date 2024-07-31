@@ -1,14 +1,30 @@
 .page {
     width: 100%;
 
-    .filter_wrap{
+    .filter_wrap {
         border-bottom: 1px solid #00000033;
 
-        .filter{
+        .filter {
             width: 85%;
         }
     }
 
+    .button_filter {
+        display: flex;
+        gap: 13px;
+        border-bottom: 1px solid #00000033;
+        border-top: 1px solid #00000033;
+        padding: 22px;
+        align-items: start;
+        background-color: transparent;
+        width: 100%;
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
 
     .header_wrap {
         margin-bottom: 37px;
@@ -47,4 +63,14 @@
         }
     }
 
+}
+
+@media (max-width: 1460px) {
+    .page {
+        .filter_wrap {
+            .filter {
+                width: 100%;
+            }
+        }
+    }
 }

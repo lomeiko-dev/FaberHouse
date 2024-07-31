@@ -8,10 +8,12 @@ import { changeFilterString } from "features/house-filter/model";
 
 interface IProps {
   className?: string;
+  isMobile?: boolean;
+  onClickShow?: () => void
 }
 
 export const Filter: React.FC<IProps> = (props) => {
-  const { className } = props;
+  const { className, isMobile, onClickShow } = props;
 
   const [fields, setFields] = useState<any>({});
   const dispatch = useAppDispatch();
@@ -24,12 +26,15 @@ export const Filter: React.FC<IProps> = (props) => {
 
     const result = query.replace(new RegExp(",", "g"), "&").slice(0, -1);
     dispatch(changeFilterString(result));
+    onClickShow?.();
   };
 
   return (
-    <div className={classNames(style.filter, className)}>
-      <GenerateForm getFields={setFields} config={filterFormConfig} />
-      <button onClick={generateQueryStringHandler}>Показать проекты</button>
+    <div style={isMobile ? { height: "400px" } : { height: "90px" }} className={classNames(style.filter, className)}>
+      <div className={classNames(style.filter_inner, isMobile ? style.mobile : style.desktop)}>
+        <GenerateForm getFields={setFields} config={filterFormConfig} />
+        <button onClick={generateQueryStringHandler}>Показать проекты</button>
+      </div>
     </div>
   );
 };

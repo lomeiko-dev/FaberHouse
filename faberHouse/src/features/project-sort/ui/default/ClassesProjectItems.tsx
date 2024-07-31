@@ -9,10 +9,11 @@ import { changeClassQueryString } from "features/project-sort/model";
 interface IProps {
   className?: string;
   defaultSelectIndex?: number
+  onClick?: () => void
 }
 
 export const ClassesProjectItems: React.FC<IProps> = (props) => {
-  const { className, defaultSelectIndex } = props;
+  const { className, defaultSelectIndex, onClick } = props;
 
   const [selectedIndex, setSelected] = useState(defaultSelectIndex || 0);
   const [newClassesConfig, setClassesConfig] = useState(classesConfig);
@@ -22,6 +23,7 @@ export const ClassesProjectItems: React.FC<IProps> = (props) => {
   const changeSortSheme = (index: number) => {
     setSelected(index);
     dispatch(changeClassQueryString(newClassesConfig[index].option));
+    onClick?.()
   };
 
   useEffect(() => {

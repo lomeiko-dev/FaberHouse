@@ -50,8 +50,37 @@
     }
 }
 
+@media (max-width: 1140px) {
+    .button_item {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 768px) {
     .wrap {
         flex-direction: column;
+    }
+
+    .button_item {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    .wrap_items {
+        flex-direction: column;
+    }
+
+    .button_item {
+        padding: 12px 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .button_item:hover {
+        background-color: #ececec;
+        border-top: none;
+        border-left: none;
+        border-right: none;
     }
 }
