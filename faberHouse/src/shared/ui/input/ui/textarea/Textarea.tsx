@@ -1,25 +1,25 @@
-import classNames from "classnames";
+import React from "react";
 import style from "./styles.module.scss";
+import classNames from "classnames";
 
 interface IProps {
   className?: string;
   isError?: boolean;
   placeholder?: string;
   getValue: (value: string) => void;
-  value?: string;
+  value?: string
 }
 
-export const Input: React.FC<IProps> = (props) => {
-  const { getValue, className, placeholder, isError, value } = props;
+export const Textarea: React.FC<IProps> = (props) => {
+  const { getValue, className, isError, placeholder, value } = props;
 
   const mods = {
     [style.error_border]: isError,
   };
 
   return (
-    <input
+    <textarea
       className={classNames(style.input, className, mods)}
-      type="text"
       placeholder={placeholder}
       value={value}
       onChange={(e: any) => getValue(e.target.value)}

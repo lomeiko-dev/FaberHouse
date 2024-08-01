@@ -5,21 +5,29 @@ import { projectOfferApiMiddleware, projectOfferApiReducer, projectOfferReducer 
 import { sortReducer } from "features/project-sort";
 import { filterReducer } from "features/house-filter";
 import { reviewApiMiddleware, reviewApiReducer } from "entities/review";
+import { addReviewApiMiddleware, addReviewApiReducer, reviewFormReducer } from "features/review-form";
 
 const rootReducer: ReducersMapObject<IStore> = {
   ProjectApi: projectApiReducer,
   ProjectOfferApi: projectOfferApiReducer,
   ProjectOfferReducer: projectOfferReducer,
   FilterReducer: filterReducer,
+  AddReviewApi: addReviewApiReducer,
   SortReducer: sortReducer,
   ReviewApi: reviewApiReducer,
+  ReviewForm: reviewFormReducer,
 };
 
 export const store = configureStore({
   reducer: rootReducer,
   devTools: true,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(projectApiMiddleware, projectOfferApiMiddleware, reviewApiMiddleware),
+    getDefaultMiddleware().concat(
+      projectApiMiddleware,
+      projectOfferApiMiddleware,
+      reviewApiMiddleware,
+      addReviewApiMiddleware
+    ),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
