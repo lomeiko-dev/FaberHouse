@@ -1,0 +1,32 @@
+.reviews {
+    border-top: 1px solid #00000033;
+    border-bottom: 1px solid #00000033;
+    padding: 50px 0;
+
+    .list {
+        column-count: 3;
+        column-gap: 30px;
+
+        .review {
+            display: inline-block;
+            margin-bottom: 30px;
+            max-width: 100%;
+        }
+    }
+
+    .paginator{
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews{
+        .list{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
