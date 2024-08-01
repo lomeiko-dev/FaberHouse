@@ -1,5 +1,6 @@
 import { projectApiReducer } from "entities/project-house";
 import { reviewApiReducer } from "entities/review";
+import { stockApiReducer } from "entities/stock";
 import { IFilterScheme } from "features/house-filter";
 import { projectOfferApiReducer } from "features/project-form";
 import { IOfferScheme } from "features/project-form";
@@ -11,6 +12,7 @@ export interface IStore {
   ProjectOfferApi: ReturnType<typeof projectOfferApiReducer>;
   ReviewApi: ReturnType<typeof reviewApiReducer>;
   AddReviewApi: ReturnType<typeof addReviewApiReducer>;
+  StockApi: ReturnType<typeof stockApiReducer>;
   ProjectOfferReducer: IOfferScheme;
   ReviewForm: IReviewFormScheme;
   FilterReducer: IFilterScheme;

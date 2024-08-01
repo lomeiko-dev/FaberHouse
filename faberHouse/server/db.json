@@ -1875,5 +1875,72 @@
       "comment": "asfasf",
       "id": 47
     }
+  ],
+  "stocks": [
+    {
+      "id": 1,
+      "preview": "https://funik.ru/wp-content/uploads/2019/01/624dac74016ee42b7eb0.jpg",
+      "title": "Замена ондулина на оцинкованный профнастил",
+      "descriptionPreview": "Акция действует до 30 августа",
+      "description": "При заказе строительства до 30 августа 2020 года вместо ондулина мы бесплатно установим оцинкованный профнастил",
+      "orderList": [
+        "Строительство дома",
+        "Строительство бани"
+      ]
+    },
+    {
+      "id": 2,
+      "preview": "https://tnsystem.ru/wa-data/public/blog/data/mainpic/post-7-original.jpg",
+      "title": "Строим по материнскому капиталу",
+      "descriptionPreview": "Вы можете оплатить строительство используя материнский капитал",
+      "orderList": [
+        "Строительство дома",
+        "Строительство бани"
+      ]
+    },
+    {
+      "id": 3,
+      "preview": "https://funik.ru/wp-content/uploads/2019/01/624dac74016ee42b7eb0.jpg",
+      "title": "Увеличение толщины утеплителя до 100мм в подарок",
+      "descriptionPreview": "Только до 28 февраля при заказе строительства увеличение толщины утеплителя до 100 мм в подарок",
+      "orderList": [
+        "Строительство дома",
+        "Строительство бани"
+      ]
+    },
+    {
+      "id": 4,
+      "preview": "https://smart-les.ru/images/Stati/Строганный%20брус.jpg",
+      "title": "Замена ондулина на оцинкованный профнастил",
+      "descriptionPreview": "Акция действует до 30 августа",
+      "description": "При заказе строительства до 30 августа 2020 года вместо ондулина мы бесплатно установим оцинкованный профнастил",
+      "orderList": [
+        "Строительство дома",
+        "Строительство бани"
+      ]
+    },
+    {
+      "id": 5,
+      "preview": "https://smart-les.ru/images/Stati/Строганный%20брус.jpg",
+      "title": "Увеличение толщины утеплителя до 100мм в подарок",
+      "descriptionPreview": "Вы можете оплатить строительство используя материнский капитал"
+    },
+    {
+      "id": 6,
+      "preview": "https://funik.ru/wp-content/uploads/2019/01/624dac74016ee42b7eb0.jpg",
+      "title": "Увеличение толщины утеплителя до 100мм в подарок",
+      "descriptionPreview": "Вы можете оплатить строительство используя материнский капитал",
+      "orderList": [
+        "Строительство дома",
+        "Строительство бани"
+      ]
+    },
+    {
+      "id": 7,
+      "preview": "https://tnsystem.ru/wa-data/public/blog/data/mainpic/post-7-original.jpg",
+      "title": "string",
+      "descriptionPreview": "string",
+      "description": "string"
+    }
   ]
 }

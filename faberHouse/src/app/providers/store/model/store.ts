@@ -6,6 +6,7 @@ import { sortReducer } from "features/project-sort";
 import { filterReducer } from "features/house-filter";
 import { reviewApiMiddleware, reviewApiReducer } from "entities/review";
 import { addReviewApiMiddleware, addReviewApiReducer, reviewFormReducer } from "features/review-form";
+import { stockApiMiddleware, stockApiReducer } from "entities/stock";
 
 const rootReducer: ReducersMapObject<IStore> = {
   ProjectApi: projectApiReducer,
@@ -16,6 +17,7 @@ const rootReducer: ReducersMapObject<IStore> = {
   SortReducer: sortReducer,
   ReviewApi: reviewApiReducer,
   ReviewForm: reviewFormReducer,
+  StockApi: stockApiReducer,
 };
 
 export const store = configureStore({
@@ -26,7 +28,8 @@ export const store = configureStore({
       projectApiMiddleware,
       projectOfferApiMiddleware,
       reviewApiMiddleware,
-      addReviewApiMiddleware
+      addReviewApiMiddleware,
+      stockApiMiddleware
     ),
 });
 
