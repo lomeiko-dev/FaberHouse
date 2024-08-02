@@ -4,6 +4,7 @@ import { HomePageLazy } from "pages/home";
 import { ProjectsPageLazy } from "pages/projects";
 import { ReviewsPageLazy } from "pages/reviews";
 import { ServicesPageLazy } from "pages/services";
+import { StockDetailPageLazy } from "pages/stock-detail";
 import { StocksPageLazy } from "pages/stocks";
 import { WorksPageLazy } from "pages/works";
 import { RouteProps } from "react-router-dom";
@@ -42,4 +43,8 @@ export const Routes: RouteProps[] = [
         path: RoutePath.WORKS.fullPath,
         element: <WorksPageLazy/>
     },
+    {
+        path: RoutePath.STOCK_DETAIL.fullPath,
+        element: <StockDetailPageLazy/>
+    }
 ]

@@ -5,6 +5,7 @@ import { offerList, offerListSecondary } from "../model/config/offer-list";
 import illustration from "shared/assets/img/illustration-1.webp";
 import MobileIcon from "shared/assets/icons/mobile.svg?react";
 import classNames from "classnames";
+import { Address } from "./components/address/Address";
 
 interface IProps {
   className?: string;
@@ -57,13 +58,7 @@ export const About: React.FC<IProps> = (props) => {
             ))}
           </div>
         </div>
-        <div className={style.adress}>
-          <div className={style.mobile}>
-            <MobileIcon className={style.icon} />
-            <p>+7 495 902 61 04</p>
-          </div>
-          <p>Москва, Каширское шоссе, владение 63, корпус 1, строение 52 Режим работы выставки с 10:00 до 20:00</p>
-        </div>
+        <Address className={style.address}/>
       </div>
     </div>
   );

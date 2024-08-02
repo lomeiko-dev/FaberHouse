@@ -9,10 +9,14 @@ export const StockApi = createApi({
     getAllStocks: builder.query<IStock[], void>({
       query: () => `${fetchQuery.STOCK}`,
     }),
+    getStockById: builder.query<IStock, number>({
+      query: (id) => `${fetchQuery.STOCK}/${id}`,
+    }),
   }),
 });
 
-export const { useGetAllStocksQuery, useLazyGetAllStocksQuery } = StockApi;
+export const { useGetAllStocksQuery, useLazyGetAllStocksQuery, useGetStockByIdQuery, useLazyGetStockByIdQuery } =
+  StockApi;
 
 export const stockApiReducer = StockApi.reducer;
 export const stockApiMiddleware = StockApi.middleware;

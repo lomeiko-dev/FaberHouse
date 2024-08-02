@@ -1,0 +1,29 @@
+.adress {
+    background-color: #EFEBDE;
+    padding: 30px 42px 15px 42px;
+
+    .mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14.7px;
+
+        .icon {
+            path {
+                fill: black;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 45px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
