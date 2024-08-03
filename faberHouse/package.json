@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@pbe/react-yandex-maps": "^1.2.5",
     "@reactuses/core": "^5.0.15",
     "@reduxjs/toolkit": "^2.2.6",
     "classnames": "^2.5.1",

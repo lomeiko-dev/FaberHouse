@@ -1959,8 +1959,7 @@
           "type": "mode_work",
           "data": "Режим работы с 10:00 до 20:00"
         }
-      ],
-      "location": "string"
+      ]
     },
     {
       "id": 2,
@@ -1991,7 +1990,10 @@
           "data": "Режим работы с 10:00 до 20:00"
         }
       ],
-      "location": "string"
+      "location": {
+        "longitude": 47.237208,
+        "latitude": 39.711524
+      }
     },
     {
       "id": 3,
@@ -2023,7 +2025,10 @@
           "data": "Режим работы с 10:00 до 20:00"
         }
       ],
-      "location": "string"
+      "location": {
+        "longitude": 47.237208,
+        "latitude": 39.711524
+      }
     }
   ]
 }

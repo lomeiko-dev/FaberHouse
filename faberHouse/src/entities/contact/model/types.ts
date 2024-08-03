@@ -17,7 +17,7 @@ export interface IContact {
   count?: number;
   type: typeContact;
   contacts: IContactItem[];
-  location?: string;
+  location?: ILocation;
 }
 
 export interface IContactItem {
@@ -26,4 +26,9 @@ export interface IContactItem {
   hideData?: string;
   href?: string;
   title?: string;
+}
+
+export interface ILocation {
+  longitude: number;
+  latitude: number;
 }
