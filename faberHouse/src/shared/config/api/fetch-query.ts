@@ -3,6 +3,7 @@ enum enumFetch {
   OFFERS = "OFFERS",
   REVIEW = "REVIEW",
   STOCK = "STOCK",
+  CONTACT = "CONTACT",
 }
 
 export const fetchQuery: Record<enumFetch, string> = {
@@ -10,4 +11,5 @@ export const fetchQuery: Record<enumFetch, string> = {
   [enumFetch.OFFERS]: "offers",
   [enumFetch.REVIEW]: "reviews",
   [enumFetch.STOCK]: "stocks",
+  [enumFetch.CONTACT]: "contacts",
 };
