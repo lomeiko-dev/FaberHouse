@@ -11,7 +11,7 @@ export const ServiceCard: React.FC<IProps> = (props) => {
     const {description, index, title, className} = props
 
     return(
-        <div className={classNames(style.service, className)}>
+        <div className={classNames(style.card, className)}>
             <div className={style.index}>{index}</div>
             <h4>{title}</h4>
             <p>{description}</p>
