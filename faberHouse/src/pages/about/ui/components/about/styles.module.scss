@@ -1,0 +1,114 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+
+    .left_part {
+        p {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 35px;
+        }
+
+        .info_card {
+            margin-top: 20px;
+            background: #EFEBDE;
+            width: 100%;
+            max-width: 504px;
+            padding: 20px;
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+            }
+        }
+
+        .advantages {
+            margin-top: 40px;
+
+            .title {
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 35px;
+                color: black;
+            }
+
+            .list {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    }
+
+    .right_part {
+        .img {
+            width: 715px;
+            height: 500px;
+        }
+    }
+}
+
+@media (max-width: 1540px) {
+    .about {
+        flex-direction: column;
+        gap: 30px;
+
+        .left_part {
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            .info_card {
+                max-width: 100%;
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .advantages {
+
+                .title {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .right_part {
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1400px) {
+    .about {
+        gap: 15px;
+
+        .left_part {
+            p {
+                font-size: 18px;
+            }
+
+            .advantages {
+                margin-top: 20px;
+
+                .title {
+                    font-size: 24px;
+                }
+
+                .list {
+                    margin-top: 10px;
+                    gap: 10px;
+                }
+            }
+        }
+
+    }
+}
