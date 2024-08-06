@@ -1,5 +1,6 @@
 import { contactApiReducer } from "entities/contact";
 import { projectApiReducer } from "entities/project-house";
+import { questionApiReducer } from "entities/question";
 import { reviewApiReducer } from "entities/review";
 import { serviceApiReducer } from "entities/service";
 import { stockApiReducer } from "entities/stock";
@@ -17,6 +18,7 @@ export interface IStore {
   StockApi: ReturnType<typeof stockApiReducer>;
   ContactApi: ReturnType<typeof contactApiReducer>;
   ServiceApi: ReturnType<typeof serviceApiReducer>;
+  QuestionApi: ReturnType<typeof questionApiReducer>;
   ProjectOfferReducer: IOfferScheme;
   ReviewForm: IReviewFormScheme;
   FilterReducer: IFilterScheme;

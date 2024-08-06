@@ -1,0 +1,15 @@
+.accordion_tab {
+    .p-accordion-header-link {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 16px 30px;
+    }
+
+    .p-accordion-header-text {
+        width: fit-content;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 35px;
+    }
+}

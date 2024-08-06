@@ -2063,5 +2063,217 @@
       "title": "Меблировка дома",
       "description": "Мы отвечаем за уют в вашем жилье и делаем его пригодным и комфортным для жизни"
     }
+  ],
+
+  "questions": [
+    {
+      "id": 1,
+      "question": "Стены будут собираться на нагеля, а на какие?"
+    },
+    {
+      "id": 2,
+      "question": "Эта самый надежный лучший способ или что-то есть лучше или другие нагеля?"
+    },
+    {
+      "id": 3,
+      "question": "Шип-паз «теплый» — это лучший вариант или есть другой более надежный?"
+    },
+    {
+      "id": 4,
+      "question": "Между брусом укладывается джут льноволокно в один слой — это самый оптимальный вариант или джут в два слоя положить или использовать другой более надежный?"
+    },
+    {
+      "id": 5,
+      "question": "Эта самый надежный лучший способ или что-то есть лучше или другие нагеля?"
+    },
+    {
+      "id": 6,
+      "question": "Стены будут собираться на нагеля, а на какие?"
+    },
+    {
+      "id": 7,
+      "question": "Обвязка — какая лучше? Может быть из лиственницы установить?"
+    },
+    {
+      "id": 8,
+      "question": "Стены будут собираться на нагеля, а на какие?"
+    },
+    {
+      "id": 9,
+      "question": "Эта самый надежный лучший способ или что-то есть лучше или другие нагеля?"
+    }
+  ],
+
+  "answers": [
+    {
+      "id": 1,
+      "questionId": 1,
+      "contents": [
+        {
+          "type": "text",
+          "content": "Внешние стены собираются на нагель 25-го диаметра,"
+        },
+        {
+          "type": "image",
+          "content": "https://betonpogreb.ru/wp-content/uploads/b/4/8/b489155299d3eb30d6fe96d97c6daecc.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questionId": 2,
+      "contents": [
+        {
+          "type": "text",
+          "content": "Да. Нагелевые крепления являются лучшим способом для крепления"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "questionId": 3,
+      "contents": [
+        {
+          "type": "text",
+          "content": "Лучше этот,"
+        },
+        {
+          "type": "image",
+          "content": "https://cdn.iportal.ru/news/54/preview/30c69b124728c91962467c1177a81337095ad3c1_1000.jpg"
+        },
+        {
+          "type": "text",
+          "content": "есть со смещенным цетром он дорогой и это уже дом конструктор."
+        },
+        {
+          "type": "image",
+          "content": "https://img.stereo.ru/v2/e2/25c3406-64c4-470b-b745-c0bd26b51416.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "questionId": 4,
+      "contents": [
+        {
+          "type": "text",
+          "content": "Лучше этот,"
+        },
+        {
+          "type": "image",
+          "content": "https://cdn.iportal.ru/news/54/preview/30c69b124728c91962467c1177a81337095ad3c1_1000.jpg"
+        },
+        {
+          "type": "text",
+          "content": "есть со смещенным цетром он дорогой и это уже дом конструктор."
+        },
+        {
+          "type": "image",
+          "content": "https://img.stereo.ru/v2/e2/25c3406-64c4-470b-b745-c0bd26b51416.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "questionId": 5,
+      "contents": [
+        {
+          "type": "text",
+          "content": "Лучше этот,"
+        },
+        {
+          "type": "image",
+          "content": "https://cdn.iportal.ru/news/54/preview/30c69b124728c91962467c1177a81337095ad3c1_1000.jpg"
+        },
+        {
+          "type": "text",
+          "content": "есть со смещенным цетром он дорогой и это уже дом конструктор."
+        },
+        {
+          "type": "image",
+          "content": "https://img.stereo.ru/v2/e2/25c3406-64c4-470b-b745-c0bd26b51416.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "questionId": 6,
+      "contents": [
+        {
+          "type": "text",
+          "content": "Лучше этот,"
+        },
+        {
+          "type": "image",
+          "content": "https://cdn.iportal.ru/news/54/preview/30c69b124728c91962467c1177a81337095ad3c1_1000.jpg"
+        },
+        {
+          "type": "text",
+          "content": "есть со смещенным цетром он дорогой и это уже дом конструктор."
+        },
+        {
+          "type": "image",
+          "content": "https://img.stereo.ru/v2/e2/25c3406-64c4-470b-b745-c0bd26b51416.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "questionId": 7,
+      "contents": [
+        {
+          "type": "text",
+          "content": "Обвязка крыши у нас делается подобным образом:"
+        },
+        {
+          "type": "image",
+          "content": "https://a.d-cd.net/gMAAAgLRDeA-1920.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "questionId": 8,
+      "contents": [
+        {
+          "type": "text",
+          "content": "Лучше этот,"
+        },
+        {
+          "type": "image",
+          "content": "https://cdn.iportal.ru/news/54/preview/30c69b124728c91962467c1177a81337095ad3c1_1000.jpg"
+        },
+        {
+          "type": "text",
+          "content": "есть со смещенным цетром он дорогой и это уже дом конструктор."
+        },
+        {
+          "type": "image",
+          "content": "https://img.stereo.ru/v2/e2/25c3406-64c4-470b-b745-c0bd26b51416.jpg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "questionId": 9,
+      "contents": [
+        {
+          "type": "text",
+          "content": "Лучше этот,"
+        },
+        {
+          "type": "image",
+          "content": "https://cdn.iportal.ru/news/54/preview/30c69b124728c91962467c1177a81337095ad3c1_1000.jpg"
+        },
+        {
+          "type": "text",
+          "content": "есть со смещенным цетром он дорогой и это уже дом конструктор."
+        },
+        {
+          "type": "image",
+          "content": "https://img.stereo.ru/v2/e2/25c3406-64c4-470b-b745-c0bd26b51416.jpg"
+        }
+      ]
+    }
   ]
 }
