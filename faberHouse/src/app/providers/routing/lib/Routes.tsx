@@ -2,6 +2,7 @@ import { AboutPageLazy } from "pages/about";
 import { ContactsPageLazy } from "pages/contacts";
 import { HomePageLazy } from "pages/home";
 import { ProjectsPageLazy } from "pages/projects";
+import { QuestionPageLazy } from "pages/question";
 import { ReviewsPageLazy } from "pages/reviews";
 import { ServicesPageLazy } from "pages/services";
 import { StockDetailPageLazy } from "pages/stock-detail";
@@ -46,5 +47,9 @@ export const Routes: RouteProps[] = [
     {
         path: RoutePath.STOCK_DETAIL.fullPath,
         element: <StockDetailPageLazy/>
+    },
+    {
+        path: RoutePath.QUESTION.fullPath,
+        element: <QuestionPageLazy/>
     }
 ]

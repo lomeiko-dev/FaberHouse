@@ -44,4 +44,8 @@ export const RoutePath: Record<enumPath, IRoutePath> = {
     path: "/stock",
     fullPath: "/stock/:id",
   },
+  [enumPath.QUESTION]: {
+    path: "/question",
+    fullPath: "/question",
+  },
 };
