@@ -10,6 +10,7 @@ import { stockApiMiddleware, stockApiReducer } from "entities/stock";
 import { contactApiMiddleware, contactApiReducer } from "entities/contact";
 import { serviceApiMiddleware, serviceApiReducer } from "entities/service";
 import { questionApiMiddleware, questionApiReducer } from "entities/question";
+import { newsApiMiddleware, newsApiReducer } from "entities/news";
 
 const rootReducer: ReducersMapObject<IStore> = {
   ProjectApi: projectApiReducer,
@@ -24,6 +25,7 @@ const rootReducer: ReducersMapObject<IStore> = {
   ContactApi: contactApiReducer,
   ServiceApi: serviceApiReducer,
   QuestionApi: questionApiReducer,
+  NewsApi: newsApiReducer,
 };
 
 export const store = configureStore({
@@ -38,7 +40,8 @@ export const store = configureStore({
       stockApiMiddleware,
       contactApiMiddleware,
       serviceApiMiddleware,
-      questionApiMiddleware
+      questionApiMiddleware,
+      newsApiMiddleware
     ),
 });
 

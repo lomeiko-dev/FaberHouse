@@ -7,6 +7,7 @@ enum enumFetch {
   SERVICE = "SERVICE",
   QUESTION = "QUESTION",
   ANSWER = "ANSWER",
+  NEWS = "NEWS",
 }
 
 export const fetchQuery: Record<enumFetch, string> = {
@@ -18,4 +19,5 @@ export const fetchQuery: Record<enumFetch, string> = {
   [enumFetch.SERVICE]: "services",
   [enumFetch.QUESTION]: "questions",
   [enumFetch.ANSWER]: "answers",
+  [enumFetch.NEWS]: "news",
 };
