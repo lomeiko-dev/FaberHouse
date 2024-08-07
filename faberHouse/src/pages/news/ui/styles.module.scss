@@ -1,0 +1,28 @@
+.page {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 100px;
+
+    .header {
+        .icon {
+            path {
+                fill: black;
+            }
+        }
+
+        h2 {
+            margin-top: 15px;
+            font-size: 49px;
+            font-weight: 500;
+            line-height: 56px;
+        }
+    }
+
+    .news_wrap{
+        margin-top: 50px;
+        border-top: 1px solid #00000033;
+        border-bottom: 1px solid #00000033;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+}

@@ -15,4 +15,6 @@ export enum enumPath {
   STOCK_DETAIL = "STOCK_DETAIL",
   CONTACTS = "CONTACTS",
   QUESTION = "QUESTION",
+  NEWS = "NEWS",
+  NEWS_DETAIL = "NEWS_DETAIL",
 }

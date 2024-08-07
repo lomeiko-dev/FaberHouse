@@ -1,8 +1,7 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
 import { baseQuery, fetchQuery } from "shared/config/api";
 import { INews } from "../types";
-import { IPayloadData } from "entities/project-house";
-import { IPayloadProps } from "./payload-types";
+import { IPayloadProps, IPayloadData } from "./payload-types";
 
 export const newsApi = createApi({
   reducerPath: "NewsApi",
@@ -10,6 +9,11 @@ export const newsApi = createApi({
   endpoints: (builder) => ({
     getPageNews: builder.query<IPayloadData, IPayloadProps>({
       query: ({ limit, page }) => `${fetchQuery.NEWS}?_page=${page}&_limit=${limit}`,
+
+      transformResponse: (response: INews[], meta) => {
+        const totalCount = meta?.response?.headers.get("x-total-count");
+        return { news: response, totalCount: Number(totalCount) };
+      },
     }),
     getNewsById: builder.query<INews, number>({
       query: (id) => `${fetchQuery.NEWS}/${id}`,

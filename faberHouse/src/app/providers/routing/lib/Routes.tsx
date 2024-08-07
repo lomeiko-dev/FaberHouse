@@ -1,6 +1,8 @@
 import { AboutPageLazy } from "pages/about";
 import { ContactsPageLazy } from "pages/contacts";
 import { HomePageLazy } from "pages/home";
+import { NewsPageLazy } from "pages/news";
+import { NewsDetailPageLazy } from "pages/news-detail";
 import { ProjectsPageLazy } from "pages/projects";
 import { QuestionPageLazy } from "pages/question";
 import { ReviewsPageLazy } from "pages/reviews";
@@ -51,5 +53,13 @@ export const Routes: RouteProps[] = [
     {
         path: RoutePath.QUESTION.fullPath,
         element: <QuestionPageLazy/>
+    },
+    {
+        path: RoutePath.NEWS.fullPath,
+        element: <NewsPageLazy/>
+    },
+    {
+        path: RoutePath.NEWS_DETAIL.fullPath,
+        element: <NewsDetailPageLazy/>
     }
 ]

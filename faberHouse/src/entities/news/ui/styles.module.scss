@@ -9,6 +9,7 @@
     }
 
     p {
+        margin-top: 10px;
         width: 100%;
         max-width: 1000px;
         font-size: 18px;
@@ -17,11 +18,49 @@
     }
 
     button {
+        margin-top: 20px;
         font-size: 15px;
         font-weight: 500;
         line-height: 30px;
         border: 1px solid #000000;
         width: 180px;
         padding: 12px 0;
+        background-color: transparent;
+    }
+}
+
+.loader {
+    width: 100%;
+    height: 215px;
+    display: block;
+    margin: auto;
+    position: relative;
+    background: #FFF;
+    box-sizing: border-box;
+}
+
+.loader::after {
+    content: '';
+    width: calc(100% - 30px);
+    height: calc(100% - 15px);
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+        linear-gradient(#DDD 100px, transparent 0),
+        linear-gradient(#DDD 16px, transparent 0),
+        linear-gradient(#DDD 50px, transparent 0),
+        linear-gradient(#DDD 50px, transparent 0),
+        linear-gradient(#DDD 50px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 100% 175px, 75% 20px, 50% 30px,  45% 20px,  50% 20px, 150px 50px;
+    background-position: -185px 0, 0 0, 0 30px, 0 60px, 0 90px, 0 142px;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+    to {
+        background-position: 185px 0, 0 0, 0 30px, 0 60px, 0 90px, 0 142px;
     }
 }

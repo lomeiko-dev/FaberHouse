@@ -1,0 +1,13 @@
+.wrap{
+    .paginator{
+        padding-top: 70px;
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

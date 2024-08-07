@@ -6,6 +6,6 @@ export interface IPayloadProps {
 }
 
 export interface IPayloadData {
-  projects: INews[];
+  news: INews[];
   totalCount: number;
 }
