@@ -21,20 +21,9 @@
             line-height: 28px;
         }
 
-        button {
+        .btn {
             margin-top: 26px;
-            background-color: var(--main-color);
-            width: 200px;
-            padding: 17px 0;
-            color: white;
-            font-size: 15px;
-            font-weight: 500;
-            transition: .2s;
-            border-radius: 3px;
-        }
-
-        button:hover {
-            background-color: var(--main-color-hover);
+            max-width: 200px;
         }
     }
 

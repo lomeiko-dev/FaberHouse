@@ -7,10 +7,11 @@ import { useAppSelector } from "shared/lib/hooks/useAppSelector";
 import { ProjectOfferSelection } from "../../model/selection/project-offer-selection";
 import { setName, setPhone, setFile, useAddOfferMutation, checkForm } from "../../model";
 import { convertToBase64 } from "shared/lib/utils/ConvertToBase64";
+import { Button } from "shared/ui/button";
 
 interface IProps {
   onSubmit?: (value: boolean) => void;
-  isMobile?: boolean
+  isMobile?: boolean;
 }
 
 export const ProjectFrom: React.FC<IProps> = (props) => {
@@ -72,7 +73,7 @@ export const ProjectFrom: React.FC<IProps> = (props) => {
               getValue={(value) => dispatch(setPhone(value))}
             />
             <FileInput isError={store.isErrorFile} placeholder="Выберите файл проекта" getFiles={changeFileHandler} />
-            <button onClick={submitHandler}>Отправить проект на расчет</button>
+            <Button onClick={submitHandler}>Отправить проект на расчет</Button>
           </div>
           <a href="#">
             Нажимая кнопку «Отправить» вы соглашаетесь с пользовательским соглашением и ознакомились с нашей политикой

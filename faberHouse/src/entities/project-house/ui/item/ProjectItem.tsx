@@ -4,6 +4,7 @@ import { useState } from "react";
 import classNames from "classnames";
 import ArrowRightIcon from "shared/assets/icons/arrow-right.svg?react";
 import ImagesIcon from "shared/assets/icons/images.svg?react";
+import { Button } from "shared/ui/button";
 
 interface IProps {
   project: IProject;
@@ -59,7 +60,7 @@ export const ProjectItem: React.FC<IProps> = (props) => {
         </div>
         <div className={style.footer}>
           <div className={style.price}>{project.price} ₽</div>
-          <button>Подробности</button>
+          <Button className={style.btn}>Подробности</Button>
         </div>
       </div>
     </div>

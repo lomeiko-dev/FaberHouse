@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { IStock } from "../model/types";
 import style from "./styles.module.scss";
+import { Button, enumStyleButton } from "shared/ui/button";
 
 interface IProps extends Omit<IStock, "description" | "orderList"> {
   className?: string;
@@ -16,7 +17,9 @@ export const StockItem: React.FC<IProps> = (props) => {
       <div className={style.content}>
         <h3>{title}</h3>
         <h4>{descriptionPreview}</h4>
-        <button onClick={onClick}>Подробности</button>
+        <Button className={style.btn} stylePattern={enumStyleButton.BORDER} onClick={onClick}>
+          Подробности
+        </Button>
       </div>
     </div>
   );

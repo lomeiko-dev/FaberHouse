@@ -7,6 +7,7 @@ import { checkForm, clearForm, reviewFormSelection, setComment, setName } from "
 import { useAppSelector } from "shared/lib/hooks/useAppSelector";
 import { useEffect, useState } from "react";
 import { useAddReviewMutation } from "../model/api/add-review-api";
+import { Button } from "shared/ui/button";
 
 interface IProps {
   onSubmit?: () => void;
@@ -72,7 +73,7 @@ export const ReviewForm: React.FC<IProps> = (props) => {
               getValue={(value) => dispatch(setComment(value))}
               placeholder="Текст отзыва"
             />
-            <button onClick={sendFormHanlder}>Оставить отзыв</button>
+            <Button onClick={sendFormHanlder}>Оставить отзыв</Button>
           </div>
           <a href="#">
             Нажимая кнопку «Отправить» вы соглашаетесь с пользовательским соглашением и ознакомились с нашей политикой

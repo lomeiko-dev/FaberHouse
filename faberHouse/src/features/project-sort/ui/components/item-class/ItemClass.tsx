@@ -1,3 +1,4 @@
+import { Button } from 'shared/ui/button'
 import style from './styles.module.scss'
 
 interface IProps {
@@ -14,7 +15,7 @@ export const ItemClass: React.FC<IProps> = (props) => {
             <img src={image} alt="illustration project" />
             <p className={style.title}>{title}</p>
             <p className={style.price}>от {price} ₽</p>
-            <button onClick={onClick}>Посмотрет проекты</button>
+            <Button className={style.btn} onClick={onClick}>Посмотрет проекты</Button>
         </div>
     )
 }

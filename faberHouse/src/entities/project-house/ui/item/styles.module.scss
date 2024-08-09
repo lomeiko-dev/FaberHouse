@@ -108,23 +108,10 @@
                 max-width: 161px;
             }
 
-            button {
-                background-color: var(--main-color);
-                color: white;
-                width: 100%;
-                max-width: 200px;
-
-                font-size: 15px;
-                font-weight: 500;
-                line-height: 30px;
-                border-radius: 3px;
-
+            .btn {
                 padding: 17px 0;
+                max-width: 200px;
                 transition: .2s;
-            }
-
-            button:hover {
-                background-color: rgba($color: #00AC78, $alpha: .7);
             }
         }
     }

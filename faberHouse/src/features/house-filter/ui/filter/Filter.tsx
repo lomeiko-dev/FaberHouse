@@ -5,6 +5,7 @@ import classNames from "classnames";
 import { useAppDispatch } from "shared/lib/hooks/useAppDispatch";
 import { useState } from "react";
 import { changeFilterString } from "features/house-filter/model";
+import { Button, enumStyleButton } from "shared/ui/button";
 
 interface IProps {
   className?: string;
@@ -33,7 +34,7 @@ export const Filter: React.FC<IProps> = (props) => {
     <div style={isMobile ? { height: "400px" } : { height: "90px" }} className={classNames(style.filter, className)}>
       <div className={classNames(style.filter_inner, isMobile ? style.mobile : style.desktop)}>
         <GenerateForm getFields={setFields} config={filterFormConfig} />
-        <button onClick={generateQueryStringHandler}>Показать проекты</button>
+        <Button className={style.btn} stylePattern={enumStyleButton.BORDER} onClick={generateQueryStringHandler}>Показать проекты</Button>
       </div>
     </div>
   );

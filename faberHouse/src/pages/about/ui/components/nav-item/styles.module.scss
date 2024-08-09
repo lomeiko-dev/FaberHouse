@@ -13,19 +13,8 @@
         line-height: 35px;
     }
 
-    button {
+    .btn {
         margin-top: 10px;
-        background-color: #00AC78;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 30px;
-        color: #fff;
-        width: 180px;
-        padding: 12px 0;
-        border-radius: 3px;
-        transition: .2s;
-    }
-    button:hover{
-        opacity: .7;
+        max-width: 180px;
     }
 }

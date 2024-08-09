@@ -2,6 +2,7 @@ import style from "./styles.module.scss";
 import lototype from "shared/assets/img/logo-secondary.webp";
 import woman from "shared/assets/img/woman.png";
 import { useWindowSize } from "@reactuses/core";
+import { Button } from "shared/ui/button";
 
 export const BlockTesting = () => {
   const { width } = useWindowSize();
@@ -13,7 +14,7 @@ export const BlockTesting = () => {
         <p>
           Пройдите несложный тест и рассчитайте стоимость дома, а также получите гарантированную скидку на строительство
         </p>
-        <button>Пройти тест</button>
+        <Button className={style.btn}>Пройти тест</Button>
       </div>
       {width > 600 && (
         <>

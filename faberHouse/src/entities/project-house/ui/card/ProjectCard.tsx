@@ -1,6 +1,7 @@
 import style from "./styles.module.scss";
 import { IProject } from "../../model/types";
 import classNames from "classnames";
+import { Button, enumStyleButton } from "shared/ui/button";
 
 interface IProps {
   project?: IProject;
@@ -20,7 +21,7 @@ export const ProjectCard: React.FC<IProps> = (props) => {
             <p className={style.square}>{project?.square} м2</p>
             <p className={style.price}>{project?.price} ₽</p>
           </div>
-          <button>Подробности</button>
+          <Button className={style.btn} stylePattern={enumStyleButton.BORDER}>Подробности</Button>
         </div>
       </div>
     </div>

@@ -15,18 +15,8 @@
     }
 }
 
-.button {
-    padding: 17px 0;
-    width: 240px;
-    background-color: rgba($color: #A985674D, $alpha: .3);
-    color: var(--secondary-color);
-    font-size: 15px;
-    font-weight: 500;
-    transition: .2s;
-}
-
-.button:hover{
-    background-color: rgba($color: #A985674D, $alpha: .2);
+.btn {
+    max-width: 240px;
 }
 
 .button_call{

@@ -1,3 +1,4 @@
+import { Button, enumStyleButton } from "shared/ui/button";
 import style from "./styles.module.scss";
 import PhoneIcon from "shared/assets/icons/phone.svg?react";
 
@@ -14,7 +15,9 @@ export const ButtonCall: React.FC<IProps> = (props) => {
           <PhoneIcon />
         </button>
       ) : (
-        <button className={style.button}>Заказать звонок</button>
+        <Button stylePattern={enumStyleButton.BROWN} className={style.btn}>
+          Заказать звонок
+        </Button>
       )}
     </>
   );
