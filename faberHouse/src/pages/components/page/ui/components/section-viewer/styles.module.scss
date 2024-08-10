@@ -1,0 +1,31 @@
+.viewer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .icon {
+        path {
+            fill: black;
+        }
+    }
+
+    .section_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        span {
+            width: 26px;
+            height: 2px;
+            background-color: black;
+        }
+
+        .section {
+            border: 2px solid #000000;
+            padding: 7px 14px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 35px;
+        }
+    }
+}

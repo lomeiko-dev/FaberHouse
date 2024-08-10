@@ -1,27 +1,7 @@
-.page {
-    width: 100%;
-    padding-top: 40px;
+.list_wrap {
+    border-top: 1px solid #00000033;
+    border-bottom: 1px solid #00000033;
+    padding-top: 51px;
     padding-bottom: 100px;
-
-    .header {
-        .icon {
-            path {
-                fill: black;
-            }
-        }
-
-        h2 {
-            font-size: 49px;
-            font-weight: 500;
-            line-height: 56px;
-        }
-    }
-
-    .list_wrap {
-        border-top: 1px solid #00000033;
-        border-bottom: 1px solid #00000033;
-        padding-top: 51px;
-        padding-bottom: 100px;
-        margin-top: 50px;
-    }
+    margin-top: 50px;
 }

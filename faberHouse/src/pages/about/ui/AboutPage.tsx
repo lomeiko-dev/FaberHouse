@@ -1,31 +1,19 @@
 import { Container } from "shared/ui/container";
 import style from "./styles.module.scss";
-import HouseIcon from "shared/assets/icons/house.svg?react";
 import { AboutCompany } from "./components/about/AboutCompany";
 import { Navigation } from "./components/navigation/Navigation";
-import { Guarantees } from "widgets/guarantees";
-import { About } from "widgets/about";
+import { Page } from "../../components/page";
 
 const AboutPage = () => {
   return (
-    <div className={style.page}>
-      <Container>
-        <div className={style.header}>
-          <HouseIcon className={style.icon} />
-          <h2>О компании</h2>
-        </div>
-      </Container>
+    <Page isDefaultComponents name="О компании">
       <div className={style.about_wrap}>
         <Container>
           <AboutCompany />
           <Navigation className={style.nav} />
         </Container>
       </div>
-      <Container>
-        <Guarantees />
-        <About />
-      </Container>
-    </div>
+    </Page>
   );
 };
 

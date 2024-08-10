@@ -1,28 +1,5 @@
-.page {
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 100px;
-
-    .header {
-        .icon {
-            path {
-                fill: black;
-            }
-        }
-
-        h2 {
-            width: 100%;
-            max-width: 823px;
-            margin-top: 15px;
-            font-size: 49px;
-            font-weight: 500;
-            line-height: 56px;
-        }
-    }
-
-    .preview {
-        margin-top: 61px;
-    }
+.preview {
+    margin-top: 61px;
 }
 
 @media (max-width: 768px) {

@@ -6,15 +6,16 @@ import { Filter } from "features/house-filter";
 interface IProps {
   isMobile?: boolean;
   onCloseModal?: () => void;
+  className?: string
 }
 
 export const SortFilterCompact: React.FC<IProps> = (props) => {
-  const { isMobile, onCloseModal } = props;
+  const { isMobile, onCloseModal, className } = props;
 
   const storeSort = useAppSelector(sortSelection);
 
   return (
-    <div>
+    <div className={className}>
       <ClassesProjectItems onClick={onCloseModal} defaultSelectIndex={storeSort.selectIndexClass + 1} />
       <div className={style.filter_wrap}>
         <Filter onClickShow={onCloseModal} isMobile={isMobile} className={style.filter} />

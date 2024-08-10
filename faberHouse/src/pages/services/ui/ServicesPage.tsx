@@ -1,20 +1,12 @@
 import { Container } from "shared/ui/container";
 import style from "./styles.module.scss";
-import HouseIcon from "shared/assets/icons/house.svg?react";
 import { ServiceList } from "widgets/services";
 import { NavItem } from "./components/nav-item/NavItem";
-import { Guarantees } from "widgets/guarantees";
-import { About } from "widgets/about";
+import { Page } from "../../components/page";
 
 const ServicesPage = () => {
   return (
-    <div className={style.page}>
-      <Container>
-        <div className={style.header}>
-          <HouseIcon className={style.icon} />
-          <h2>Услуги</h2>
-        </div>
-      </Container>
+    <Page isDefaultComponents name="Услуги">
       <div className={style.service_wrap}>
         <Container>
           <p className={style.description}>
@@ -34,11 +26,7 @@ const ServicesPage = () => {
           </nav>
         </Container>
       </div>
-      <Container>
-        <Guarantees/>
-        <About/>
-      </Container>
-    </div>
+    </Page>
   );
 };
 

@@ -1,29 +1,17 @@
 import { Container } from "shared/ui/container";
 import { NewsList } from "./components/news-list/NewsList";
 import style from "./styles.module.scss";
-import HouseIcon from "shared/assets/icons/house.svg?react";
-import { Guarantees } from "widgets/guarantees";
-import { About } from "widgets/about";
+import { Page } from "../../components/page";
 
 const NewsPage = () => {
   return (
-    <div className={style.page}>
-      <Container>
-        <div className={style.header}>
-          <HouseIcon className={style.icon} />
-          <h2>Новости</h2>
-        </div>
-      </Container>
+    <Page isDefaultComponents name="Новости">
       <div className={style.news_wrap}>
         <Container>
           <NewsList limit={5} />
         </Container>
       </div>
-      <Container>
-        <Guarantees/>
-        <About/>
-      </Container>
-    </div>
+    </Page>
   );
 };
 
