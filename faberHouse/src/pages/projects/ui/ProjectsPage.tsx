@@ -26,7 +26,7 @@ const ProjectsPage = () => {
           <p>Фильтр проектов</p>
         </button>
       ) : (
-        <SortFilterCompact className={style.sort_filter} />
+        <SortFilterCompact/>
       )}
 
       <Container className={style.content}>

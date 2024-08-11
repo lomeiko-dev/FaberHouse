@@ -2,17 +2,17 @@ import classNames from 'classnames'
 import style from './styles.module.scss'
 
 interface IProps {
-    className?: string,
-    value: string,
+    className?: string
+    title: string
 }
 
-export const ItemList: React.FC<IProps> = (props) => {
-    const {value, className} = props
+export const ListItem: React.FC<IProps> = (props) => {
+    const {className, title} = props
 
     return(
         <div className={classNames(style.item, className)}>
             <span></span>
-            <p>{value}</p>
+            <p>{title}</p>
         </div>
     )
 }

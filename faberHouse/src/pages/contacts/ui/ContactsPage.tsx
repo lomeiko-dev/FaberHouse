@@ -1,16 +1,14 @@
-import style from "./styles.module.scss";
+
 import { ContactList } from "widgets/contacts";
-import { Container } from "shared/ui/container";
 import { Page } from "../../components/page";
+import { BlockSection } from "shared/ui/block-section";
 
 const ContactsPage = () => {
   return (
     <Page isDefaultComponents name="Контакты">
-      <div className={style.list_wrap}>
-        <Container>
+      <BlockSection>
           <ContactList />
-        </Container>
-      </div>
+      </BlockSection>
     </Page>
   );
 };

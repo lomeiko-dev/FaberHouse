@@ -1,9 +1,8 @@
 import style from "./styles.module.scss";
 import { advantageList } from "../model/config/advantage-list";
-import { ItemTitle } from "./components/item-title/ItemTitle";
+import { ListItem } from "shared/ui/list-item";
 import { offerList, offerListSecondary } from "../model/config/offer-list";
 import illustration from "shared/assets/img/illustration-1.webp";
-import MobileIcon from "shared/assets/icons/mobile.svg?react";
 import classNames from "classnames";
 import { Address } from "./components/address/Address";
 
@@ -27,7 +26,7 @@ export const About: React.FC<IProps> = (props) => {
           <h3>Преимущества сотрудничества с нами</h3>
           <div className={style.list}>
             {advantageList.map((item, index) => (
-              <ItemTitle key={index} title={item} />
+              <ListItem key={index} title={item} />
             ))}
           </div>
         </div>
@@ -45,7 +44,7 @@ export const About: React.FC<IProps> = (props) => {
           </p>
           <div className={style.list}>
             {offerList.map((item, index) => (
-              <ItemTitle key={index} title={item} />
+              <ListItem key={index} title={item} />
             ))}
           </div>
           <p className={style.title_secondary}>
@@ -54,7 +53,7 @@ export const About: React.FC<IProps> = (props) => {
           </p>
           <div className={style.list}>
             {offerListSecondary.map((item, index) => (
-              <ItemTitle key={index} title={item} />
+              <ListItem key={index} title={item} />
             ))}
           </div>
         </div>

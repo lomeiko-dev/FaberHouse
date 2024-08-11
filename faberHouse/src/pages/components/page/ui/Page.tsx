@@ -4,13 +4,14 @@ import { SectionViewer } from "./components/section-viewer/SectionViewer";
 import { Container } from "shared/ui/container";
 import { Guarantees } from "widgets/guarantees";
 import { About } from "widgets/about";
+import { BlockSection } from "shared/ui/block-section";
 
 interface IProps {
   className?: string;
   name: string;
   sections?: string[];
   children: React.ReactNode;
-  isDefaultComponents?: boolean
+  isDefaultComponents?: boolean;
 }
 
 export const Page: React.FC<IProps> = (props) => {
@@ -26,10 +27,14 @@ export const Page: React.FC<IProps> = (props) => {
       </Container>
       {children}
       {isDefaultComponents && (
-        <Container>
-          <Guarantees/>
-          <About/>
-        </Container>
+        <>
+          <BlockSection>
+            <Guarantees />
+          </BlockSection>
+          <BlockSection>
+            <About />
+          </BlockSection>
+        </>
       )}
     </div>
   );

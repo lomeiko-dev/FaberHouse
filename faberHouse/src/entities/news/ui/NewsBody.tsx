@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { enumNewsBody, INewsBody } from '../model/types';
-import { ItemTitle } from './components/item-title/ItemTitle';
 import style from './styles.module.scss'
+import { ListItem } from 'shared/ui/list-item';
 
 interface IProps extends INewsBody {
     className?: string
@@ -34,7 +34,7 @@ export const NewsBody: React.FC<IProps> = (props) => {
                 const contents: string[] = content
                 return(
                     <div className={style.p_list}>
-                        {contents.map(item => <ItemTitle title={item}/>)}
+                        {contents.map(item => <ListItem title={item}/>)}
                     </div>
                 )
         }

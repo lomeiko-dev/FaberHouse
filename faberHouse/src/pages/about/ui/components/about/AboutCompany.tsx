@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import style from "./styles.module.scss";
-import { ItemList } from "../item/ItemList";
+import { ListItem } from "shared/ui/list-item";
 import illustration from "shared/assets/img/illustration-2.webp";
 import { Info } from "../info/Info";
 import { useWindowSize } from "@reactuses/core";
@@ -28,9 +28,9 @@ export const AboutCompany: React.FC<IProps> = (props) => {
         <div className={style.advantages}>
           <p className={style.title}>Преимущества сотрудничества с нами</p>
           <div className={style.list}>
-            <ItemList value="Собственное производство и возможность автономного возведения зданий, независимо от других фирм. Поэтому у нас недорогие и качественные дома за короткий срок!" />
-            <ItemList value="Высококачественные материалы. Деревянные дома возводятся из экологически чистого сырья без вредных для здоровья добавок." />
-            <ItemList value="Возможность для клиента избавиться от хлопот по доставке и установке, так как все это наши заботы." />
+            <ListItem title="Собственное производство и возможность автономного возведения зданий, независимо от других фирм. Поэтому у нас недорогие и качественные дома за короткий срок!" />
+            <ListItem title="Высококачественные материалы. Деревянные дома возводятся из экологически чистого сырья без вредных для здоровья добавок." />
+            <ListItem title="Возможность для клиента избавиться от хлопот по доставке и установке, так как все это наши заботы." />
           </div>
         </div>
       </div>

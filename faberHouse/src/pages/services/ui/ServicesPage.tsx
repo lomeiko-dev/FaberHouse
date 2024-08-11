@@ -1,14 +1,13 @@
-import { Container } from "shared/ui/container";
 import style from "./styles.module.scss";
 import { ServiceList } from "widgets/services";
 import { NavItem } from "./components/nav-item/NavItem";
 import { Page } from "../../components/page";
+import { BlockSection } from "shared/ui/block-section";
 
 const ServicesPage = () => {
   return (
     <Page isDefaultComponents name="Услуги">
-      <div className={style.service_wrap}>
-        <Container>
+      <BlockSection>
           <p className={style.description}>
             Компания Legno Domus занимается строительством уютных и прочных деревянных домов. Но, кроме того, мы берем
             на себя выполнение и других услуг, включая меблировку зданий и устройство коммуникаций.
@@ -24,8 +23,7 @@ const ServicesPage = () => {
             <NavItem link="" title="Строительство в кредит"/>
             <NavItem link="" title="Инженерные коммуникации"/>
           </nav>
-        </Container>
-      </div>
+      </BlockSection>
     </Page>
   );
 };
