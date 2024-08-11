@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import style from "./styles.module.scss";
-import { NavItem } from "../nav-item/NavItem";
+import { NavItem } from "shared/components/nav-item";
 
 interface IProps {
   className?: string;
@@ -17,9 +17,9 @@ export const Navigation: React.FC<IProps> = (props) => {
       </h4>
 
       <nav>
-        <NavItem link="" title="Собственное производство"/>
-        <NavItem link="" title="Часто задаваемые вопросы"/>
-        <NavItem link="" title="Новости"/>
+        <NavItem href="" title="Собственное производство"/>
+        <NavItem href="" title="Часто задаваемые вопросы"/>
+        <NavItem href="" title="Новости"/>
       </nav>
     </div>
   );

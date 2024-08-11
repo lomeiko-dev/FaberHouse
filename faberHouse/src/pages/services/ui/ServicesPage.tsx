@@ -1,8 +1,8 @@
 import style from "./styles.module.scss";
 import { ServiceList } from "widgets/services";
-import { NavItem } from "./components/nav-item/NavItem";
 import { Page } from "../../components/page";
 import { BlockSection } from "shared/ui/block-section";
+import { NavItem } from "shared/components/nav-item";
 
 const ServicesPage = () => {
   return (
@@ -19,9 +19,9 @@ const ServicesPage = () => {
             проживание в доме.
           </h4>
           <nav>
-            <NavItem link="" title="Индивидуальное проектирование"/>
-            <NavItem link="" title="Строительство в кредит"/>
-            <NavItem link="" title="Инженерные коммуникации"/>
+            <NavItem href="" title="Индивидуальное проектирование"/>
+            <NavItem href="" title="Строительство в кредит"/>
+            <NavItem href="" title="Инженерные коммуникации"/>
           </nav>
       </BlockSection>
     </Page>
