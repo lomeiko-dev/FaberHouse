@@ -41,30 +41,10 @@
                 flex-direction: column;
                 gap: 10px;
 
-                p {
+                .title {
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 35px;
-                }
-
-                .item {
-                    margin-left: 10px;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    gap: 10px;
-
-                    span{
-                        border: 3.5px solid #000000;
-                        border-radius: 100%;
-                        width: 10px;
-                        height: 10px;
-                    }
-                    p {
-                        font-size: 18px;
-                        font-weight: 500;
-                        line-height: 35px;
-                    }
                 }
             }
         }

@@ -3,7 +3,8 @@ import style from "./styles.module.scss";
 import React from "react";
 import { Container } from "shared/ui/container";
 import classNames from "classnames";
-import { Address } from "widgets/about";
+import { AddressCard } from "shared/components/address-card";
+import { ListItem } from "shared/ui/list-item";
 
 interface IProps extends Omit<IStock, "title"> {
     className?: string
@@ -22,17 +23,12 @@ export const StockPreview: React.FC<IProps> = (props) => {
             <p className={style.descr}>{description}</p>
             {orderList.length > 0 && (
               <div className={style.order}>
-                <p>Акция действуте при заказе:</p>
-                {orderList.map((item) => (
-                  <div className={style.item}>
-                    <span></span>
-                    <p>{item}</p>
-                  </div>
-                ))}
+                <p className={style.title}>Акция действуте при заказе:</p>
+                {orderList.map((item) => <ListItem title={item}/>)}
               </div>
             )}
             <p className={style.message}>Уточняйте подробности акции у наших менеджеров</p>
-            <Address className={style.address}/>
+            <AddressCard className={style.address}/>
           </div>
         </div>
       </Container>
