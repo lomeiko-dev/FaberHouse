@@ -1,11 +1,19 @@
-import style from "./styles.module.scss";
+import classNames from 'classnames'
+import style from './styles.module.scss'
+
 import Num14Icon from "shared/assets/icons/num14.svg?react";
 import ManipulateIcon from "shared/assets/icons/manipulate.svg?react";
 import CheckIcon from "shared/assets/icons/check.svg?react";
 
-export const Info: React.FC = () => {
-  return (
-      <div className={style.info}>
+interface IProps {
+    className?: string,
+}
+
+export const CompanyStats: React.FC<IProps> = (props) => {
+    const {className} = props
+
+    return(
+        <div className={classNames(style.stats, className)}>
         <div className={style.info_content}>
           <div className={style.item}>
             <Num14Icon />
@@ -21,5 +29,5 @@ export const Info: React.FC = () => {
           </div>
         </div>
       </div>
-  );
-};
+    )
+}

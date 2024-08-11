@@ -1,12 +1,11 @@
 import style from "./styles.module.scss";
 import house from "shared/assets/img/house.webp";
 import HouseIcon from "shared/assets/icons/house.svg?react";
+import { useWindowSize } from "@reactuses/core";
 import { Info } from "../info/Info";
-import {useWindowSize} from '@reactuses/core'
 
 export const Intro = () => {
-
-  const {width} = useWindowSize()
+  const { width } = useWindowSize();
 
   return (
     <div className={style.intro}>

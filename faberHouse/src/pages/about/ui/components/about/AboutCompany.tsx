@@ -2,8 +2,8 @@ import classNames from "classnames";
 import style from "./styles.module.scss";
 import { ListItem } from "shared/ui/list-item";
 import illustration from "shared/assets/img/illustration-2.webp";
-import { Info } from "../info/Info";
 import { useWindowSize } from "@reactuses/core";
+import { CompanyStats } from "shared/components/company-stats";
 
 interface IProps {
   className?: string;
@@ -36,7 +36,7 @@ export const AboutCompany: React.FC<IProps> = (props) => {
       </div>
       <div className={style.right_part}>
         <img src={illustration} alt="illustration" />
-        {width > 560 && <Info />}
+        {width > 560 && <CompanyStats />}
       </div>
     </div>
   );

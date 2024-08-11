@@ -4,6 +4,16 @@
     flex-direction: row;
     height: 777px;
 
+    .stats {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 801px;
+        height: 182px;
+        background-color: #EFEBDE;
+    }
+
     .content {
         background-color: var(--main-color);
         width: 100%;
@@ -43,7 +53,7 @@
         height: 100%;
     }
 
-    
+
 }
 
 @media (max-width: 768px) {
@@ -63,7 +73,7 @@
                 font-size: 38px;
                 line-height: 40px;
             }
-    
+
             h2 {
                 font-size: 16px;
                 line-height: 25px;
@@ -89,9 +99,9 @@
 }
 
 @media (max-width: 500px) {
-    .intro{
-        .content{
-            .container{
+    .intro {
+        .content {
+            .container {
                 margin-top: 50px;
             }
         }
@@ -105,7 +115,7 @@
                 font-size: 24px;
                 line-height: 30px;
             }
-    
+
             h2 {
                 font-size: 16px;
                 line-height: 25px;

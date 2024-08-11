@@ -1,4 +1,4 @@
-.info {
+.stats {
     height: 100%;
     
     .info_content {
@@ -12,6 +12,10 @@
         }
 
         .item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
             width: 150px;
 
             p {
@@ -26,7 +30,7 @@
 
 
 @media (max-width: 768px) {
-    .info {
+    .stats {
         height: 150px;
 
         .info_inner {
