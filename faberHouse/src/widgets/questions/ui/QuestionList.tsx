@@ -4,6 +4,7 @@ import { Accordion, AccordionTab } from "primereact/accordion";
 import { AnswerBody, useGetAllQuestionQuery, useLazyGetAnswerByQuestionIdQuery } from "entities/question";
 import { useState } from "react";
 import { Laoder } from "shared/ui/loader";
+import { Error } from "shared/ui/error";
 
 interface IProps {
   className?: string;
@@ -12,7 +13,7 @@ interface IProps {
 export const QuestionList: React.FC<IProps> = (props) => {
   const { className } = props;
 
-  const { data } = useGetAllQuestionQuery();
+  const { data, isLoading, isError } = useGetAllQuestionQuery();
   const [getAnswer, result] = useLazyGetAnswerByQuestionIdQuery();
   const [activeIndex, setActiveIndex] = useState(-1);
 
@@ -22,6 +23,18 @@ export const QuestionList: React.FC<IProps> = (props) => {
       await getAnswer(data[index].id || 0);
     }
   };
+
+  if(isLoading){
+    return <Laoder/>
+  }
+
+  if(isError){
+    return(
+      <div>
+        <Error message="Ошибка сервера."/>
+      </div>
+    )
+  }
 
   return (
     <div className={classNames('question_list_wrap', className)}>

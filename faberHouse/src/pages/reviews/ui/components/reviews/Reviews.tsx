@@ -1,12 +1,13 @@
 import { useState } from "react";
 import style from "./styles.module.scss";
-import { Review, Skeleton, useGetPageReviewsQuery } from "entities/review";
+import { Review, useGetPageReviewsQuery } from "entities/review";
 import { Paginator } from "shared/ui/paginator";
 import { Error } from "shared/ui/error";
 import classNames from "classnames";
 import { Container } from "shared/ui/container";
 import { useWindowSize } from "@reactuses/core";
 import { ReviewForm } from "features/review-form";
+import { Laoder } from "shared/ui/loader";
 
 interface IProps {
   className?: string;
@@ -27,7 +28,7 @@ export const Reviews: React.FC<IProps> = (props) => {
         {Array(limit)
           .fill("")
           .map(() => (
-            <Skeleton />
+            <Laoder/>
           ))}
       </div>
     );

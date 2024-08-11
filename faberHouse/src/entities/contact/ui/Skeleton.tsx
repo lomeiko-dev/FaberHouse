@@ -1,4 +1,4 @@
-import style from './Review.module.scss'
+import style from './styles.module.scss'
 
 export const Skeleton = () => {
     return(

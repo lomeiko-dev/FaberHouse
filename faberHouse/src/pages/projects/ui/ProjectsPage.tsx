@@ -26,15 +26,22 @@ const ProjectsPage = () => {
           <p>Фильтр проектов</p>
         </button>
       ) : (
-        <SortFilterCompact/>
+        <SortFilterCompact />
       )}
 
       <Container className={style.content}>
         <SortDrawer className={style.sort} />
         <ProjectListCommon className={style.list} params={`${storeSort.queryString}&${storeFilter.fullFilterString}`} />
       </Container>
-      <Sidebar title="Фильтрация и сортировка" position="top" fullScreen onHide={() => setVisible(false)} visible={visible} modal>
-        <SortFilterCompact onCloseModal={() => setVisible(false)} isMobile/>
+      <Sidebar
+        title="Фильтрация и сортировка"
+        position="top"
+        fullScreen
+        onHide={() => setVisible(false)}
+        visible={visible}
+        modal
+      >
+        <SortFilterCompact onCloseModal={() => setVisible(false)} isMobile />
       </Sidebar>
     </Page>
   );

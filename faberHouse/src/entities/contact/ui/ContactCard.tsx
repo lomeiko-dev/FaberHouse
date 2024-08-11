@@ -4,7 +4,6 @@ import { contactConfig } from "../model/config/contact-config";
 import { ContactItem } from "./components/item/ContactItem";
 import { IContact } from "../model/types";
 import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
-import { useEffect } from "react";
 
 interface IProps extends IContact {
   className?: string;
@@ -14,10 +13,6 @@ export const ContactCard: React.FC<IProps> = (props) => {
   const { type, className, contacts, location, count } = props;
 
   const contact = contactConfig[type];
-
-  useEffect(() => {
-    console.log(location);
-  });
 
   return (
     <div className={style.contact_wrap}>

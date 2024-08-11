@@ -5,35 +5,32 @@ import { Page } from "../../components/page";
 import { Error } from "shared/ui/error";
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
 import { RoutePath } from "shared/config/route-path";
+import { Skeleton } from "./components/preview/Skeleton";
+import { BlockSection } from "shared/ui/block-section";
 
 const StockDetailPage = () => {
   const { id = "" } = useParams();
   const { data, isLoading, isError, error } = useGetStockByIdQuery(Number(id));
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  if(isLoading){
-    return(
-      <div>
-        loading...
-      </div>
-    )
-  }
-
-  if(isError){
-    if((error as FetchBaseQueryError).status === 404){
-      navigate(RoutePath.NOT_FOUND.path)
+  if (isError) {
+    if ((error as FetchBaseQueryError).status === 404) {
+      navigate(RoutePath.NOT_FOUND.path);
     }
-    
-    return(
+
+    return (
       <div>
-        <Error message="Ошибка сервера"/>
+        <Error message="Ошибка сервера" />
       </div>
-    )
+    );
   }
 
   return (
     <Page isDefaultComponents name={data?.title || "Ошибка"}>
+      <BlockSection>
+      {isLoading && <Skeleton/>}
       {data && <StockPreview {...data} />}
+      </BlockSection>
     </Page>
   );
 };
