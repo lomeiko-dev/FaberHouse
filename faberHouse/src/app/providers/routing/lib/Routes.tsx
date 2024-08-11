@@ -3,13 +3,13 @@ import { ContactsPageLazy } from "pages/contacts";
 import { HomePageLazy } from "pages/home";
 import { NewsPageLazy } from "pages/news";
 import { NewsDetailPageLazy } from "pages/news-detail";
+import { NotFoundPageLazy } from "pages/not-found";
 import { ProjectsPageLazy } from "pages/projects";
 import { QuestionPageLazy } from "pages/question";
 import { ReviewsPageLazy } from "pages/reviews";
 import { ServicesPageLazy } from "pages/services";
 import { StockDetailPageLazy } from "pages/stock-detail";
 import { StocksPageLazy } from "pages/stocks";
-import { WorksPageLazy } from "pages/works";
 import { RouteProps } from "react-router-dom";
 import { RoutePath } from "shared/config/route-path";
 
@@ -43,8 +43,8 @@ export const Routes: RouteProps[] = [
         element: <StocksPageLazy/>
     },
     {
-        path: RoutePath.WORKS.fullPath,
-        element: <WorksPageLazy/>
+        path: RoutePath.NOT_FOUND.fullPath,
+        element: <NotFoundPageLazy/>
     },
     {
         path: RoutePath.STOCK_DETAIL.fullPath,

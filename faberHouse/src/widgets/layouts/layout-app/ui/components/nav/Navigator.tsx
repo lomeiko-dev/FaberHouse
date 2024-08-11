@@ -20,8 +20,8 @@ export const Navigator = () => {
       <Link onClick={() => navigateHandler(enumPath.ABOUT)} to={RoutePath.ABOUT.path}>
         {RoutePath.ABOUT.name}
       </Link>
-      <Link onClick={() => navigateHandler(enumPath.WORKS)} to={RoutePath.WORKS.path}>
-        {RoutePath.WORKS.name}
+      <Link onClick={() => navigateHandler(enumPath.ABOUT)} to={RoutePath.ABOUT.path}>
+        {RoutePath.ABOUT.name}
       </Link>
       <Link onClick={() => navigateHandler(enumPath.REVIEWS)} to={RoutePath.REVIEWS.path}>
         {RoutePath.REVIEWS.name}

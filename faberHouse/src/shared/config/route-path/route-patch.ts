@@ -20,10 +20,9 @@ export const RoutePath: Record<enumPath, IRoutePath> = {
     path: "/about",
     fullPath: "/about",
   },
-  [enumPath.WORKS]: {
-    name: "Наши работы",
-    path: "/works",
-    fullPath: "/works",
+  [enumPath.NOT_FOUND]: {
+    path: "*",
+    fullPath: "*",
   },
   [enumPath.REVIEWS]: {
     name: "Отзывы",

@@ -9,7 +9,6 @@ export enum enumPath {
   PROJECTS = "PROJECTS",
   SERVICES = "SERVICES",
   ABOUT = "ABOUT",
-  WORKS = "WORKS",
   REVIEWS = "REVIEWS",
   STOCKS = "STOCKS",
   STOCK_DETAIL = "STOCK_DETAIL",
@@ -17,4 +16,5 @@ export enum enumPath {
   QUESTION = "QUESTION",
   NEWS = "NEWS",
   NEWS_DETAIL = "NEWS_DETAIL",
+  NOT_FOUND = "NOT_FOUND",
 }

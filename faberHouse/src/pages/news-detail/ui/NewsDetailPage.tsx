@@ -1,15 +1,19 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import style from "./styles.module.scss";
 import { NewsBody, useGetNewsByIdQuery } from "entities/news";
 import { Laoder } from "shared/ui/loader";
 import { Error } from "shared/ui/error";
 import { Page } from "../../components/page";
 import { BlockSection } from "shared/ui/block-section";
+import { useEffect } from "react";
+import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
+import { RoutePath } from "shared/config/route-path";
 
 const NewsDetailPage = () => {
   const { id = "" } = useParams();
 
-  const { data, isLoading, isError } = useGetNewsByIdQuery(Number(id));
+  const { data, isLoading, isError, error } = useGetNewsByIdQuery(Number(id));
+  const navigate = useNavigate()
 
   if(isLoading){
     return(
@@ -20,12 +24,20 @@ const NewsDetailPage = () => {
   }
 
   if(isError){
+    if((error as FetchBaseQueryError).status === 404){
+      navigate(RoutePath.NOT_FOUND.path)
+    }
+    
     return(
         <div className={style.page}>
             <Error message="Ошибка сервера."/>
         </div>
     )
   }
+
+  useEffect(() => {
+    console.log(status)
+  }, [status])
 
   return (
     <Page isDefaultComponents name={data?.title || 'Ошибка'}>
