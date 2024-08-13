@@ -31,7 +31,7 @@ const NewsDetailPage = () => {
   }
 
   return (
-    <Page isDefaultComponents name={data?.title || "Ошибка"}>
+    <Page sections={[RoutePath.ABOUT.name || "error", "Новости"]} isDefaultComponents name={data?.title || "Ошибка"}>
       <BlockSection>
         <p className={style.descr}>{data?.description}</p>
         <div className={style.body}>
