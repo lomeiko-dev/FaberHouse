@@ -11,18 +11,22 @@ interface IProps {
   name: string;
   sections?: string[];
   children: React.ReactNode;
+  headerChildren?: React.ReactNode;
   isDefaultComponents?: boolean;
 }
 
 export const Page: React.FC<IProps> = (props) => {
-  const { name, sections, className, children, isDefaultComponents } = props;
+  const { name, sections, className, children, isDefaultComponents, headerChildren } = props;
 
   return (
     <div className={classNames(style.page, className)}>
       <Container>
         <div className={style.header}>
-          <SectionViewer sections={sections} />
-          <h2>{name}</h2>
+          <div className={style.header_inner}>
+            <SectionViewer sections={sections} />
+            <h2>{name}</h2>
+          </div>
+          {headerChildren}
         </div>
       </Container>
       {children}

@@ -10,6 +10,7 @@ import FilterIcon from "shared/assets/icons/filter.svg?react";
 import { useWindowSize } from "@reactuses/core";
 import { Sidebar } from "primereact/sidebar";
 import { Page } from "../../components/page";
+import { BlockTest } from "shared/components/block-test";
 
 const ProjectsPage = () => {
   const storeSort = useAppSelector(sortSelection);
@@ -19,7 +20,7 @@ const ProjectsPage = () => {
   const { width } = useWindowSize();
 
   return (
-    <Page isDefaultComponents name="Наши проекты домов, бань и коттеджей из дерева">
+    <Page headerChildren={<BlockTest/>} isDefaultComponents name="Наши проекты домов, бань и коттеджей из дерева">
       {width < 480 ? (
         <button onClick={() => setVisible(true)} className={style.button_filter}>
           <FilterIcon />
