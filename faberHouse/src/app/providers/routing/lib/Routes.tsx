@@ -4,6 +4,7 @@ import { HomePageLazy } from "pages/home";
 import { NewsPageLazy } from "pages/news";
 import { NewsDetailPageLazy } from "pages/news-detail";
 import { NotFoundPageLazy } from "pages/not-found";
+import { ProjectDetailPageLazy } from "pages/project-detail";
 import { ProjectsPageLazy } from "pages/projects";
 import { QuestionPageLazy } from "pages/question";
 import { ReviewsPageLazy } from "pages/reviews";
@@ -61,5 +62,9 @@ export const Routes: RouteProps[] = [
     {
         path: RoutePath.NEWS_DETAIL.fullPath,
         element: <NewsDetailPageLazy/>
+    },
+    {
+        path: RoutePath.PROJECT_DETAIL.fullPath,
+        element: <ProjectDetailPageLazy/>
     }
 ]

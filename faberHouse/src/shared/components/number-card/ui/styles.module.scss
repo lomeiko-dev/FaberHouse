@@ -1,0 +1,19 @@
+.card {
+    position: relative;
+    border: 1px solid #CCCCCC;
+    padding: 28px 41px;
+    width: 100%;
+    max-width: 456px;
+
+    .count {
+        position: absolute;
+        top: -5px;
+        left: 20px;
+        z-index: 20;
+
+        font-size: 94px;
+        font-weight: 500;
+        line-height: 35px;
+        color: #EFEBDE;
+    }
+}

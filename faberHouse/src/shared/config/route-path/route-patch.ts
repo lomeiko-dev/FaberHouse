@@ -55,4 +55,8 @@ export const RoutePath: Record<enumPath, IRoutePath> = {
     path: "/news",
     fullPath: "/news/:id",
   },
+  [enumPath.PROJECT_DETAIL]: {
+    path: "/project",
+    fullPath: "/project/:id",
+  },
 };

@@ -1,0 +1,17 @@
+.item {
+    border: 1px solid #CCCCCC;
+    width: 100%;
+    max-width: 159px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}

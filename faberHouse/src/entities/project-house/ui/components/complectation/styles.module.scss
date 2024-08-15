@@ -1,0 +1,17 @@
+.complectation {
+    table {
+        border-collapse: collapse;
+        letter-spacing: 1px;
+    }
+
+    tr,
+    th,
+    td {
+        border: 1px solid #00000033;
+        padding: 20px 30px;
+
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+}

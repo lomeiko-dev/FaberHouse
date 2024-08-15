@@ -5,6 +5,7 @@ import classNames from "classnames";
 import ArrowRightIcon from "shared/assets/icons/arrow-right.svg?react";
 import ImagesIcon from "shared/assets/icons/images.svg?react";
 import { Button } from "shared/ui/button";
+import { Stats } from "../components/stats/Stats";
 
 interface IProps {
   project: IProject;
@@ -49,15 +50,7 @@ export const ProjectItem: React.FC<IProps> = (props) => {
         </div>
       </div>
       <div className={style.card}>
-        <h2>{project.title}</h2>
-        <div className={style.info}>
-          <p>Серия: {project.series}</p>
-          <p>Технология: {project.technology}</p>
-          <p>Размер: {project.size}</p>
-          <p>Дополнительно: {project.additionally}</p>
-          <p>Количество комнат: {project.roomCount}</p>
-          <p>Площадь: {project.square} м2</p>
-        </div>
+        <Stats title={project.title} project={project}/>
         <div className={style.footer}>
           <div className={style.price}>{project.price} ₽</div>
           <Button className={style.btn}>Подробности</Button>

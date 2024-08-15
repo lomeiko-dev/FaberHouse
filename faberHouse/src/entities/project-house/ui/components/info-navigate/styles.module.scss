@@ -1,0 +1,24 @@
+.navigate {
+    display: flex;
+    flex-direction: row;
+
+    button {
+        background-color: transparent;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        padding: 22px 0;
+        width: 100%;
+        border: 1px solid #00000033;
+        color: #00000080;
+        transition: .2s;
+    }
+    button:hover{
+        background-color: #eaeaea33;
+    }
+
+    .selected{
+        border: 1px solid black !important;
+        color: black !important;
+    }
+}

@@ -15,10 +15,18 @@ export const projectApi = createApi({
         return { projects: response, totalCount: Number(totalCount) };
       },
     }),
+    getProjectById: builder.query<IProject, number>({
+      query: (id) => `${fetchQuery.PROJECT}/${id}`,
+    }),
   }),
 });
 
-export const { useGetPageProjectsQuery, useLazyGetPageProjectsQuery } = projectApi;
+export const {
+  useGetPageProjectsQuery,
+  useLazyGetPageProjectsQuery,
+  useGetProjectByIdQuery,
+  useLazyGetProjectByIdQuery,
+} = projectApi;
 
 export const projectApiReducer = projectApi.reducer;
 export const projectApiMiddleware = projectApi.middleware;

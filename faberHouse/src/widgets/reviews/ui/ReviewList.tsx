@@ -1,6 +1,6 @@
 import style from "./style.module.scss";
 import classNames from "classnames";
-import { Review, Skeleton, useGetPageReviewsQuery } from "entities/review";
+import { Review, useGetPageReviewsQuery } from "entities/review";
 import { Error } from "shared/ui/error";
 import CommentIcon from "shared/assets/icons/comment.svg?react";
 import ArrowRight from "shared/assets/icons/arrow-right.svg?react";
@@ -18,11 +18,7 @@ export const ReviewList: React.FC<IProps> = (props) => {
   if (isLoading) {
     return (
       <div className={style.list}>
-        {Array(limit)
-          .fill("")
-          .map(() => (
-            <Skeleton />
-          ))}
+        ...loading
       </div>
     );
   }

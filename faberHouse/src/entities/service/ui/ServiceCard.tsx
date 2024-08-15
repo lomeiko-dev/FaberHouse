@@ -1,20 +1,20 @@
-import classNames from 'classnames';
-import { IService } from '../model/types';
-import style from './styles.module.scss'
+import classNames from "classnames";
+import { IService } from "../model/types";
+import style from "./styles.module.scss";
+import { NumberCard } from "shared/components/number-card";
 
 interface IProps extends IService {
-    className?: string,
-    index: number
+  className?: string;
+  index: number;
 }
 
 export const ServiceCard: React.FC<IProps> = (props) => {
-    const {description, index, title, className} = props
+  const { description, index, title, className } = props;
 
-    return(
-        <div className={classNames(style.card, className)}>
-            <div className={style.index}>{index}</div>
-            <h4>{title}</h4>
-            <p>{description}</p>
-        </div>
-    )
-}
+  return (
+    <NumberCard count={index} className={classNames(style.card, className)}>
+      <h4>{title}</h4>
+      <p>{description}</p>
+    </NumberCard>
+  );
+};
