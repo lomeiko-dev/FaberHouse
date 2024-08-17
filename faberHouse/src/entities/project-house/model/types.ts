@@ -37,7 +37,7 @@ export interface IAnotatedModel {
 
 export interface IAnotated {
   coord: IPoint;
-  title: string;
+  title?: string;
   description?: string;
 }
 

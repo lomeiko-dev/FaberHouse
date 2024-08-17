@@ -1,0 +1,45 @@
+.point {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+
+    .title {
+        background-color: #17181D;
+        border-radius: 3px;
+        padding: 2px 7px;
+        width: 100%;
+        max-width: 320px;
+        transition: .2s;
+
+        .text {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 25px;
+            color: #fff;
+            white-space: nowrap;
+        }
+    }
+
+    .icon {
+        transition: .2s;
+    }
+}
+
+.point:hover, .active {
+    .icon {
+        circle {
+            stroke: white;
+        }
+
+        circle:nth-child(1) {
+            fill: white;
+        }
+    }
+
+    .title{
+        background-color: var(--main-color);
+    }
+}
