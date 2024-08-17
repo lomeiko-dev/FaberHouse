@@ -20,7 +20,7 @@ export interface IProject {
   exteriorWalls: string;
   services: number[];
   houseAnotated: IAnotatedModel;
-  AllAnotated?: IAnotatedModel[];
+  allAnotated?: IAnotatedModel[];
   foundationIllustrations: IFoundation[];
 }
 

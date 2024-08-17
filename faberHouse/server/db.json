@@ -282,6 +282,180 @@
           "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
           "title": "Фундамент на ЖБ забивных сваях"
         }
+      ],
+      "houseAnotated": {
+        "modelImage": "https://i0.wp.com/illustrators.ru/uploads/illustration/image/1141672/Jrw93dEG5Z8.jpg?ssl=1",
+        "anotateds": [
+          {
+            "coord": {
+              "x": 120,
+              "y": 120
+            },
+            "title": "Кровля"
+          },
+          {
+            "coord": {
+              "x": 240,
+              "y": 65
+            },
+            "title": "Внутренние перегородки"
+          },
+          {
+            "coord": {
+              "x": 195,
+              "y": 190
+            },
+            "title": "Межэтаные перекрытия"
+          },
+          {
+            "coord": {
+              "x": 320,
+              "y": 90
+            },
+            "title": "Наружные стены"
+          },
+          {
+            "coord": {
+              "x": 370,
+              "y": 440
+            },
+            "title": "Узлы"
+          }
+        ]
+      },
+      "allAnotated": [
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        }
       ]
     },
     {

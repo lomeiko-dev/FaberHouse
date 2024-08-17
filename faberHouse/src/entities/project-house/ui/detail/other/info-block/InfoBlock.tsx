@@ -9,6 +9,7 @@ import { ImageList } from "entities/project-house/ui/components/images/ImageList
 import { Cooperation } from "entities/project-house/ui/components/cooperation/Cooperation";
 import { enumInfoNavigate } from "entities/project-house/model/types";
 import { useState } from "react";
+import { Technologies } from "entities/project-house/ui/components/technologies/Technologies";
 
 interface IProps {
   className?: string;
@@ -18,30 +19,30 @@ interface IProps {
 export const InfoBlock: React.FC<IProps> = (props) => {
   const { className, data } = props;
 
-  const [key, setKey] = useState<string>(enumInfoNavigate.COMPLECTATION)
+  const [key, setKey] = useState<string>(enumInfoNavigate.COMPLECTATION);
 
   const getBody = () => {
-    switch(key){
+    switch (key) {
       case enumInfoNavigate.COMPLECTATION:
-        return <Complectation data={data}/>
+        return <Complectation data={data} />;
       case enumInfoNavigate.SERVICES:
-        return <Service/>
+        return <Service />;
       case enumInfoNavigate.FOUNDATION:
-        return <FoundationList foundations={data.foundationIllustrations}/>
+        return <FoundationList foundations={data.foundationIllustrations} />;
       case enumInfoNavigate.MEDIA:
-        return <ImageList images={data.images}/>
+        return <ImageList images={data.images} />;
       case enumInfoNavigate.COOPERATION:
-        return <Cooperation/>
+        return <Cooperation />;
+      case enumInfoNavigate.TECHNOLOGY:
+        return <Technologies houseAnotated={data.houseAnotated} allAnotated={data.allAnotated} />;
     }
-  }
+  };
 
   return (
     <div className={classNames(style.block, className)}>
       <InfoNavigate onClick={setKey} />
 
-      <div className={style.body}>
-        {getBody()}
-      </div>
+      <div className={style.body}>{getBody()}</div>
     </div>
   );
 };

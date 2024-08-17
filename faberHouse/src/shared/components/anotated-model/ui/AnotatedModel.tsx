@@ -21,7 +21,12 @@ export const AnotatedModel: React.FC<IProps> = (props) => {
       <div className={style.model}>
         <div style={{ backgroundImage: `url(${model.modelImage})` }} className={style.image}></div>
         {model.anotateds.map((item, index) => (
-          <Point isActive={index === selectIndex} onClick={() => setSelect(index)} point={item.coord} title={item.title} />
+          <Point
+            isActive={index === selectIndex}
+            onClick={() => setSelect(index)}
+            point={item.coord}
+            title={showAnotated ? String(index + 1) : item.title || ""}
+          />
         ))}
       </div>
       {showAnotated && (
