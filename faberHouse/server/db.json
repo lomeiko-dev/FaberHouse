@@ -471,14 +471,212 @@
       "images": [
         "https://idei.club/uploads/posts/2022-08/1661279463_73-idei-club-p-krasivie-nebolshie-domiki-vkontakte-82.jpg",
         "https://mykaleidoscope.ru/x/uploads/posts/2023-03/1679972093_mykaleidoscope-ru-p-nebolshoi-krasivii-dom-krasivo-16.jpg",
-        "https://pro-dachnikov.com/uploads/posts/2023-01/1672913460_pro-dachnikov-com-p-krasivii-dom-snaruzhi-foto-80.jpg"
+        "https://pro-dachnikov.com/uploads/posts/2023-01/1672913460_pro-dachnikov-com-p-krasivii-dom-snaruzhi-foto-80.jpg",
+        "https://avatars.mds.yandex.net/i?id=ae3763397b4a1922a94bdb2cdf88f8ca_l-5336554-images-thumbs&n=13",
+        "https://ak-prom.ru/wp-content/uploads/2023/12/a27b137af279d0cbf97504819e5a5ef4.jpeg",
+        "https://bipbap.ru/wp-content/uploads/2017/10/3016-1-1536x1021.jpg",
+        "https://avatars.mds.yandex.net/i?id=fdfa3511202e99c2a83f379aa3332230_l-5877601-images-thumbs&n=13"
       ],
       "videos": [],
       "files": [],
-      "foundation": "",
-      "roomHeight": "",
+      "foundation": "Опорно-столбчатые блоки (Одна тумбочка размером 400×400×400 мм, состоит из четырех цементных блоков размером 200×200×400 мм, ). Стоимость свайного фундамента рассчитывается отдельно.",
+      "roomHeight": "Высота 1-го этажа — 2,40 м ± 5 см, высота мансардного этажа — 2,3 м ± 5 см",
       "constructionTechnology": "",
-      "additionallyDescription": ""
+      "exteriorWalls": "Профилированный брус 90×140 мм",
+      "additionallyDescription": "",
+      "services": [1, 3, 4, 5, 7, 9],
+      "foundationIllustrations": [
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Свайно-винтовой фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Ленточный фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Монолитная плита-фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Фундамент на ЖБ забивных сваях"
+        }
+      ],
+      "houseAnotated": {
+        "modelImage": "https://celoft.ru/wp-content/uploads/3/c/8/3c88bea96cfadc1d20705f66aa71ad29.jpeg",
+        "anotateds": [
+          {
+            "coord": {
+              "x": 120,
+              "y": 120
+            },
+            "title": "Кровля"
+          },
+          {
+            "coord": {
+              "x": 240,
+              "y": 65
+            },
+            "title": "Внутренние перегородки"
+          },
+          {
+            "coord": {
+              "x": 195,
+              "y": 190
+            },
+            "title": "Межэтаные перекрытия"
+          },
+          {
+            "coord": {
+              "x": 320,
+              "y": 90
+            },
+            "title": "Наружные стены"
+          },
+          {
+            "coord": {
+              "x": 370,
+              "y": 440
+            },
+            "title": "Узлы"
+          }
+        ]
+      },
+      "allAnotated": [
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 3,
@@ -493,14 +691,210 @@
       "images": [
         "https://idei.club/uploads/posts/2022-08/1661279463_73-idei-club-p-krasivie-nebolshie-domiki-vkontakte-82.jpg",
         "https://mykaleidoscope.ru/x/uploads/posts/2023-03/1679972093_mykaleidoscope-ru-p-nebolshoi-krasivii-dom-krasivo-16.jpg",
+        "https://pro-dachnikov.com/uploads/posts/2023-01/1672913460_pro-dachnikov-com-p-krasivii-dom-snaruzhi-foto-80.jpg",
+        "https://mykaleidoscope.ru/x/uploads/posts/2023-03/1679972093_mykaleidoscope-ru-p-nebolshoi-krasivii-dom-krasivo-16.jpg",
         "https://pro-dachnikov.com/uploads/posts/2023-01/1672913460_pro-dachnikov-com-p-krasivii-dom-snaruzhi-foto-80.jpg"
       ],
       "videos": [],
       "files": [],
-      "foundation": "",
-      "roomHeight": "",
+      "foundation": "Опорно-столбчатые блоки (Одна тумбочка размером 400×400×400 мм, состоит из четырех цементных блоков размером 200×200×400 мм, ). Стоимость свайного фундамента рассчитывается отдельно.",
+      "roomHeight": "Высота 1-го этажа — 2,40 м ± 5 см, высота мансардного этажа — 2,3 м ± 5 см",
       "constructionTechnology": "",
-      "additionallyDescription": ""
+      "exteriorWalls": "Профилированный брус 90×140 мм",
+      "additionallyDescription": "",
+      "services": [3, 4, 7, 9],
+      "foundationIllustrations": [
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Свайно-винтовой фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Ленточный фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Монолитная плита-фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Фундамент на ЖБ забивных сваях"
+        }
+      ],
+      "houseAnotated": {
+        "modelImage": "https://honka.ru/wp-content/uploads/2018/04/honka-maestro-26-e1638362172371.jpg",
+        "anotateds": [
+          {
+            "coord": {
+              "x": 120,
+              "y": 120
+            },
+            "title": "Кровля"
+          },
+          {
+            "coord": {
+              "x": 240,
+              "y": 65
+            },
+            "title": "Внутренние перегородки"
+          },
+          {
+            "coord": {
+              "x": 195,
+              "y": 190
+            },
+            "title": "Межэтаные перекрытия"
+          },
+          {
+            "coord": {
+              "x": 320,
+              "y": 90
+            },
+            "title": "Наружные стены"
+          },
+          {
+            "coord": {
+              "x": 370,
+              "y": 440
+            },
+            "title": "Узлы"
+          }
+        ]
+      },
+      "allAnotated": [
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 4,
@@ -519,10 +913,204 @@
       ],
       "videos": [],
       "files": [],
-      "foundation": "",
-      "roomHeight": "",
+      "foundation": "Опорно-столбчатые блоки (Одна тумбочка размером 400×400×400 мм, состоит из четырех цементных блоков размером 200×200×400 мм, ). Стоимость свайного фундамента рассчитывается отдельно.",
+      "roomHeight": "Высота 1-го этажа — 2,40 м ± 5 см, высота мансардного этажа — 2,3 м ± 5 см",
       "constructionTechnology": "",
-      "additionallyDescription": ""
+      "exteriorWalls": "Профилированный брус 90×140 мм",
+      "additionallyDescription": "",
+      "services": [1, 2],
+      "foundationIllustrations": [
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Свайно-винтовой фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Ленточный фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Монолитная плита-фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Фундамент на ЖБ забивных сваях"
+        }
+      ],
+      "houseAnotated": {
+        "modelImage": "https://i0.wp.com/illustrators.ru/uploads/illustration/image/1141672/Jrw93dEG5Z8.jpg?ssl=1",
+        "anotateds": [
+          {
+            "coord": {
+              "x": 120,
+              "y": 120
+            },
+            "title": "Кровля"
+          },
+          {
+            "coord": {
+              "x": 240,
+              "y": 65
+            },
+            "title": "Внутренние перегородки"
+          },
+          {
+            "coord": {
+              "x": 195,
+              "y": 190
+            },
+            "title": "Межэтаные перекрытия"
+          },
+          {
+            "coord": {
+              "x": 320,
+              "y": 90
+            },
+            "title": "Наружные стены"
+          },
+          {
+            "coord": {
+              "x": 370,
+              "y": 440
+            },
+            "title": "Узлы"
+          }
+        ]
+      },
+      "allAnotated": [
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 5,
@@ -541,10 +1129,204 @@
       ],
       "videos": [],
       "files": [],
-      "foundation": "",
-      "roomHeight": "",
+      "foundation": "Опорно-столбчатые блоки (Одна тумбочка размером 400×400×400 мм, состоит из четырех цементных блоков размером 200×200×400 мм, ). Стоимость свайного фундамента рассчитывается отдельно.",
+      "roomHeight": "Высота 1-го этажа — 2,40 м ± 5 см, высота мансардного этажа — 2,3 м ± 5 см",
       "constructionTechnology": "",
-      "additionallyDescription": ""
+      "exteriorWalls": "Профилированный брус 90×140 мм",
+      "additionallyDescription": "",
+      "services": [],
+      "foundationIllustrations": [
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Свайно-винтовой фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Ленточный фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Монолитная плита-фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Фундамент на ЖБ забивных сваях"
+        }
+      ],
+      "houseAnotated": {
+        "modelImage": "https://i0.wp.com/illustrators.ru/uploads/illustration/image/1141672/Jrw93dEG5Z8.jpg?ssl=1",
+        "anotateds": [
+          {
+            "coord": {
+              "x": 120,
+              "y": 120
+            },
+            "title": "Кровля"
+          },
+          {
+            "coord": {
+              "x": 240,
+              "y": 65
+            },
+            "title": "Внутренние перегородки"
+          },
+          {
+            "coord": {
+              "x": 195,
+              "y": 190
+            },
+            "title": "Межэтаные перекрытия"
+          },
+          {
+            "coord": {
+              "x": 320,
+              "y": 90
+            },
+            "title": "Наружные стены"
+          },
+          {
+            "coord": {
+              "x": 370,
+              "y": 440
+            },
+            "title": "Узлы"
+          }
+        ]
+      },
+      "allAnotated": [
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 6,
@@ -563,10 +1345,204 @@
       ],
       "videos": [],
       "files": [],
-      "foundation": "",
-      "roomHeight": "",
+      "foundation": "Опорно-столбчатые блоки (Одна тумбочка размером 400×400×400 мм, состоит из четырех цементных блоков размером 200×200×400 мм, ). Стоимость свайного фундамента рассчитывается отдельно.",
+      "roomHeight": "Высота 1-го этажа — 2,40 м ± 5 см, высота мансардного этажа — 2,3 м ± 5 см",
       "constructionTechnology": "",
-      "additionallyDescription": ""
+      "exteriorWalls": "Профилированный брус 90×140 мм",
+      "additionallyDescription": "",
+      "services": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "foundationIllustrations": [
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Свайно-винтовой фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Ленточный фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Монолитная плита-фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Фундамент на ЖБ забивных сваях"
+        }
+      ],
+      "houseAnotated": {
+        "modelImage": "https://i0.wp.com/illustrators.ru/uploads/illustration/image/1141672/Jrw93dEG5Z8.jpg?ssl=1",
+        "anotateds": [
+          {
+            "coord": {
+              "x": 120,
+              "y": 120
+            },
+            "title": "Кровля"
+          },
+          {
+            "coord": {
+              "x": 240,
+              "y": 65
+            },
+            "title": "Внутренние перегородки"
+          },
+          {
+            "coord": {
+              "x": 195,
+              "y": 190
+            },
+            "title": "Межэтаные перекрытия"
+          },
+          {
+            "coord": {
+              "x": 320,
+              "y": 90
+            },
+            "title": "Наружные стены"
+          },
+          {
+            "coord": {
+              "x": 370,
+              "y": 440
+            },
+            "title": "Узлы"
+          }
+        ]
+      },
+      "allAnotated": [
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 7,
@@ -585,10 +1561,204 @@
       ],
       "videos": [],
       "files": [],
-      "foundation": "",
-      "roomHeight": "",
+      "foundation": "Опорно-столбчатые блоки (Одна тумбочка размером 400×400×400 мм, состоит из четырех цементных блоков размером 200×200×400 мм, ). Стоимость свайного фундамента рассчитывается отдельно.",
+      "roomHeight": "Высота 1-го этажа — 2,40 м ± 5 см, высота мансардного этажа — 2,3 м ± 5 см",
       "constructionTechnology": "",
-      "additionallyDescription": ""
+      "exteriorWalls": "Профилированный брус 90×140 мм",
+      "additionallyDescription": "",
+      "services": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "foundationIllustrations": [
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Свайно-винтовой фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Ленточный фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Монолитная плита-фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Фундамент на ЖБ забивных сваях"
+        }
+      ],
+      "houseAnotated": {
+        "modelImage": "https://i0.wp.com/illustrators.ru/uploads/illustration/image/1141672/Jrw93dEG5Z8.jpg?ssl=1",
+        "anotateds": [
+          {
+            "coord": {
+              "x": 120,
+              "y": 120
+            },
+            "title": "Кровля"
+          },
+          {
+            "coord": {
+              "x": 240,
+              "y": 65
+            },
+            "title": "Внутренние перегородки"
+          },
+          {
+            "coord": {
+              "x": 195,
+              "y": 190
+            },
+            "title": "Межэтаные перекрытия"
+          },
+          {
+            "coord": {
+              "x": 320,
+              "y": 90
+            },
+            "title": "Наружные стены"
+          },
+          {
+            "coord": {
+              "x": 370,
+              "y": 440
+            },
+            "title": "Узлы"
+          }
+        ]
+      },
+      "allAnotated": [
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 8,
@@ -607,10 +1777,204 @@
       ],
       "videos": [],
       "files": [],
-      "foundation": "",
-      "roomHeight": "",
+      "foundation": "Опорно-столбчатые блоки (Одна тумбочка размером 400×400×400 мм, состоит из четырех цементных блоков размером 200×200×400 мм, ). Стоимость свайного фундамента рассчитывается отдельно.",
+      "roomHeight": "Высота 1-го этажа — 2,40 м ± 5 см, высота мансардного этажа — 2,3 м ± 5 см",
       "constructionTechnology": "",
-      "additionallyDescription": ""
+      "exteriorWalls": "Профилированный брус 90×140 мм",
+      "additionallyDescription": "",
+      "services": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "foundationIllustrations": [
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Свайно-винтовой фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Ленточный фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Монолитная плита-фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Фундамент на ЖБ забивных сваях"
+        }
+      ],
+      "houseAnotated": {
+        "modelImage": "https://i0.wp.com/illustrators.ru/uploads/illustration/image/1141672/Jrw93dEG5Z8.jpg?ssl=1",
+        "anotateds": [
+          {
+            "coord": {
+              "x": 120,
+              "y": 120
+            },
+            "title": "Кровля"
+          },
+          {
+            "coord": {
+              "x": 240,
+              "y": 65
+            },
+            "title": "Внутренние перегородки"
+          },
+          {
+            "coord": {
+              "x": 195,
+              "y": 190
+            },
+            "title": "Межэтаные перекрытия"
+          },
+          {
+            "coord": {
+              "x": 320,
+              "y": 90
+            },
+            "title": "Наружные стены"
+          },
+          {
+            "coord": {
+              "x": 370,
+              "y": 440
+            },
+            "title": "Узлы"
+          }
+        ]
+      },
+      "allAnotated": [
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 9,
@@ -629,10 +1993,204 @@
       ],
       "videos": [],
       "files": [],
-      "foundation": "",
-      "roomHeight": "",
+      "foundation": "Опорно-столбчатые блоки (Одна тумбочка размером 400×400×400 мм, состоит из четырех цементных блоков размером 200×200×400 мм, ). Стоимость свайного фундамента рассчитывается отдельно.",
+      "roomHeight": "Высота 1-го этажа — 2,40 м ± 5 см, высота мансардного этажа — 2,3 м ± 5 см",
       "constructionTechnology": "",
-      "additionallyDescription": ""
+      "exteriorWalls": "Профилированный брус 90×140 мм",
+      "additionallyDescription": "",
+      "services": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "foundationIllustrations": [
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Свайно-винтовой фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Ленточный фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Монолитная плита-фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Фундамент на ЖБ забивных сваях"
+        }
+      ],
+      "houseAnotated": {
+        "modelImage": "https://i0.wp.com/illustrators.ru/uploads/illustration/image/1141672/Jrw93dEG5Z8.jpg?ssl=1",
+        "anotateds": [
+          {
+            "coord": {
+              "x": 120,
+              "y": 120
+            },
+            "title": "Кровля"
+          },
+          {
+            "coord": {
+              "x": 240,
+              "y": 65
+            },
+            "title": "Внутренние перегородки"
+          },
+          {
+            "coord": {
+              "x": 195,
+              "y": 190
+            },
+            "title": "Межэтаные перекрытия"
+          },
+          {
+            "coord": {
+              "x": 320,
+              "y": 90
+            },
+            "title": "Наружные стены"
+          },
+          {
+            "coord": {
+              "x": 370,
+              "y": 440
+            },
+            "title": "Узлы"
+          }
+        ]
+      },
+      "allAnotated": [
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 10,
@@ -651,10 +2209,204 @@
       ],
       "videos": [],
       "files": [],
-      "foundation": "",
-      "roomHeight": "",
+      "foundation": "Опорно-столбчатые блоки (Одна тумбочка размером 400×400×400 мм, состоит из четырех цементных блоков размером 200×200×400 мм, ). Стоимость свайного фундамента рассчитывается отдельно.",
+      "roomHeight": "Высота 1-го этажа — 2,40 м ± 5 см, высота мансардного этажа — 2,3 м ± 5 см",
       "constructionTechnology": "",
-      "additionallyDescription": ""
+      "exteriorWalls": "Профилированный брус 90×140 мм",
+      "additionallyDescription": "",
+      "services": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "foundationIllustrations": [
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Свайно-винтовой фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Ленточный фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Монолитная плита-фундамент"
+        },
+        {
+          "image": "https://colodu.club/uploads/posts/2022-10/1667237599_2-colodu-club-p-fundament-dlya-dachi-dizain-instagram-2.jpg",
+          "title": "Фундамент на ЖБ забивных сваях"
+        }
+      ],
+      "houseAnotated": {
+        "modelImage": "https://i0.wp.com/illustrators.ru/uploads/illustration/image/1141672/Jrw93dEG5Z8.jpg?ssl=1",
+        "anotateds": [
+          {
+            "coord": {
+              "x": 120,
+              "y": 120
+            },
+            "title": "Кровля"
+          },
+          {
+            "coord": {
+              "x": 240,
+              "y": 65
+            },
+            "title": "Внутренние перегородки"
+          },
+          {
+            "coord": {
+              "x": 195,
+              "y": 190
+            },
+            "title": "Межэтаные перекрытия"
+          },
+          {
+            "coord": {
+              "x": 320,
+              "y": 90
+            },
+            "title": "Наружные стены"
+          },
+          {
+            "coord": {
+              "x": 370,
+              "y": 440
+            },
+            "title": "Узлы"
+          }
+        ]
+      },
+      "allAnotated": [
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        },
+        {
+          "modelImage": "https://beltep-structura.ru/wp-content/uploads/2024/04/abbe6e11a015137a588ee8f64600a7b7.jpeg?v=1714392055",
+          "anotateds": [
+            {
+              "coord": {
+                "x": 120,
+                "y": 120
+              },
+              "title": "Настил пола",
+              "description": "Шпунтованная половая доска 27/36 мм"
+            },
+            {
+              "coord": {
+                "x": 240,
+                "y": 65
+              },
+              "title": "Пароизоляция",
+              "description": "«Ондутис» (или аналоги)"
+            },
+            {
+              "coord": {
+                "x": 195,
+                "y": 190
+              },
+              "title": "Утеплитель",
+              "description": "Минеральная вата «KNAUF» / (100мм/150мм/200 мм)"
+            },
+            {
+              "coord": {
+                "x": 320,
+                "y": 90
+              },
+              "title": "Наружные стены"
+            },
+            {
+              "coord": {
+                "x": 370,
+                "y": 540
+              },
+              "title": "Лаги пола",
+              "description": "Доска 40х150 мм (40х200 мм)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 11,

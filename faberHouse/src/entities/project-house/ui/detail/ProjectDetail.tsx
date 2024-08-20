@@ -20,10 +20,12 @@ export const ProjectDetail: React.FC<IProps> = (props) => {
       <div className={style.header}>
         <div className={style.left_part}>
           <ImageSlider className={style.slider} images={data.images} />
-          <div className={style.services}>
-            <h3>В стоимость включено</h3>
-            <ServiceList className={style.list} ids={data.services} />
-          </div>
+          {data.services.length > 0 && (
+            <div className={style.services}>
+              <h3>В стоимость включено</h3>
+              <ServiceList className={style.list} ids={data.services} />
+            </div>
+          )}
         </div>
         <div className={style.right_part}>
           <Stats className={style.stats} title="Информация о проекте" project={data} />
