@@ -11,24 +11,41 @@
             .slider {
                 width: 100%;
                 max-width: 946px;
+                height: fit-content;
+            }
+
+            h3 {
+                margin-top: 36px;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 35px;
+            }
+
+            .list {
+                margin-top: 17px;
             }
         }
     }
 
     .body {
         margin-top: 36px;
-        h3 {
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 35px;
-        }
 
-        .list {
-            margin-top: 17px;
-        }
-
-        .info{
+        .info {
             margin-top: 100px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .detail{
+        .header{
+            flex-direction: column;
+
+            .stats{
+                background-color: #cbcbcb;
+                margin: 20px 0;
+                padding: 27px 55px;
+            }
         }
     }
 }

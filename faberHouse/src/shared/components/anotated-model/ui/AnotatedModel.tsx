@@ -19,15 +19,16 @@ export const AnotatedModel: React.FC<IProps> = (props) => {
   return (
     <div className={classNames(style.wrap, className)}>
       <div className={style.model}>
-        <div style={{ backgroundImage: `url(${model.modelImage})` }} className={style.image}></div>
-        {model.anotateds.map((item, index) => (
-          <Point
-            isActive={index === selectIndex}
-            onClick={() => setSelect(index)}
-            point={item.coord}
-            title={showAnotated ? String(index + 1) : item.title || ""}
-          />
-        ))}
+        <div style={{ backgroundImage: `url(${model.modelImage})` }} className={style.image}>
+          {model.anotateds.map((item, index) => (
+            <Point
+              isActive={index === selectIndex}
+              onClick={() => setSelect(index)}
+              point={item.coord}
+              title={showAnotated ? String(index + 1) : item.title || ""}
+            />
+          ))}
+        </div>
       </div>
       {showAnotated && (
         <div className={style.anotated}>

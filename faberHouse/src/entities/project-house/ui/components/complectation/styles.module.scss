@@ -15,3 +15,10 @@
         line-height: 25px;
     }
 }
+
+@media (max-width: 600px) {
+    tr{
+        display: flex;
+        flex-direction: column;
+    }
+}

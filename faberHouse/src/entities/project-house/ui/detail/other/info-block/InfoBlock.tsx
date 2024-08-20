@@ -1,15 +1,16 @@
 import classNames from "classnames";
 import style from "./styles.module.scss";
-import { InfoNavigate } from "../../../components/info-navigate/InfoNavigate";
-import { Complectation } from "entities/project-house/ui/components/complectation/Complectation";
-import { IProject } from "entities/project-house/model";
-import { Service } from "entities/project-house/ui/components/service/Service";
-import { FoundationList } from "entities/project-house/ui/components/foundations/FoundationList";
-import { ImageList } from "entities/project-house/ui/components/images/ImageList";
-import { Cooperation } from "entities/project-house/ui/components/cooperation/Cooperation";
-import { enumInfoNavigate } from "entities/project-house/model/types";
 import { useState } from "react";
-import { Technologies } from "entities/project-house/ui/components/technologies/Technologies";
+import { useWindowSize } from "@reactuses/core";
+import { InfoNavigate } from "../../../components/info-navigate/InfoNavigate";
+import { Complectation } from "../../../components/complectation/Complectation";
+import { IProject } from "../../../../model/types";
+import { Service } from "../../../components/service/Service";
+import { FoundationList } from "../../../components/foundations/FoundationList";
+import { ImageList } from "../../../components/images/ImageList";
+import { Cooperation } from "../../../components/cooperation/Cooperation";
+import { enumInfoNavigate } from "../../../../model/types";
+import { Technologies } from "../../../components/technologies/Technologies";
 
 interface IProps {
   className?: string;
@@ -21,8 +22,11 @@ export const InfoBlock: React.FC<IProps> = (props) => {
 
   const [key, setKey] = useState<string>(enumInfoNavigate.COMPLECTATION);
 
-  const getBody = () => {
-    switch (key) {
+  const {width} = useWindowSize()
+
+  const getBody = (type: string) => {
+    console.log(type)
+    switch (type) {
       case enumInfoNavigate.COMPLECTATION:
         return <Complectation data={data} />;
       case enumInfoNavigate.SERVICES:
@@ -40,9 +44,14 @@ export const InfoBlock: React.FC<IProps> = (props) => {
 
   return (
     <div className={classNames(style.block, className)}>
-      <InfoNavigate onClick={setKey} />
-
-      <div className={style.body}>{getBody()}</div>
+      {width > 900 && <InfoNavigate onClick={setKey} />}
+      <div className={style.body}>
+        {width > 900 ? 
+          getBody(key) : 
+          <>
+            {Object.entries(enumInfoNavigate).map(item => getBody(String(item[1])))}
+          </>}
+      </div>
     </div>
   );
 };
