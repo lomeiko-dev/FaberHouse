@@ -20,7 +20,7 @@ const ProjectsPage = () => {
   const { width } = useWindowSize();
 
   return (
-    <Page headerChildren={<BlockTest/>} isDefaultComponents name="Наши проекты домов, бань и коттеджей из дерева">
+    <Page headerChildren={width > 768 && <BlockTest />} isDefaultComponents name="Наши проекты домов, бань и коттеджей из дерева">
       {width < 480 ? (
         <button onClick={() => setVisible(true)} className={style.button_filter}>
           <FilterIcon />

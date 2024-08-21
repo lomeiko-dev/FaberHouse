@@ -287,9 +287,14 @@
                 align-items: center;
                 flex-direction: column;
 
-                button {
+                .price{
                     width: 100%;
                     max-width: 100%;
+                }
+
+                button {
+                    width: 100%;
+                    max-width: 100% !important;
                 }
             }
         }

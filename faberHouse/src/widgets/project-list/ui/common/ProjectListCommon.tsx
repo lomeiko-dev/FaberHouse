@@ -6,6 +6,8 @@ import { Paginator } from "shared/ui/paginator";
 import { Error } from "shared/ui/error";
 import { useWindowSize } from "@reactuses/core";
 import { ProjectFrom, ProjectModal } from "features/project-form";
+import { useNavigate } from "react-router-dom";
+import { RoutePath } from "shared/config/route-path";
 
 interface IProps {
   className?: string;
@@ -20,12 +22,18 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
   const { data, isLoading, isError } = useGetPageProjectsQuery({ page: page, limit: count, params });
   const { width } = useWindowSize();
 
+  const navigate = useNavigate();
+
   const [isHideForm, setHideForm] = useState(false);
   const refAnchor = useRef<HTMLDivElement | null>(null);
-  
+
+  const clickProjectHandler = (id: number) => {
+    navigate(`${RoutePath.PROJECT_DETAIL.path}/${id}`);
+  };
+
   useEffect(() => {
-    setPage(1)
-  }, [params])
+    setPage(1);
+  }, [params]);
 
   useEffect(() => {
     if (isHideForm) {
@@ -76,7 +84,7 @@ export const ProjectListCommon: React.FC<IProps> = (props) => {
           </>
         )}
         {data?.projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <ProjectCard onClick={() => clickProjectHandler(project.id || 0)} key={index} project={project} />
         ))}
       </div>
       <Paginator

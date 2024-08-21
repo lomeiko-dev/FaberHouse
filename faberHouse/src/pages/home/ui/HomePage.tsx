@@ -19,7 +19,7 @@ const HomePage = () => {
       <Container>
         <ProjectListPreview className={style.projects} title="Зарекомендовашие себя проекты" count={5} />
         <Guarantees />
-        <ReviewList limit={width < 768 ? 1 : 3} />
+        <ReviewList className={style.review} limit={width < 768 ? 1 : 3} />
         <About className={style.about} />
       </Container>
     </div>
