@@ -1,4 +1,4 @@
-import { ISelector } from "./types";
+import { ISelector } from "../../types";
 
 export const additionallySelectors: ISelector[] = [
   {
