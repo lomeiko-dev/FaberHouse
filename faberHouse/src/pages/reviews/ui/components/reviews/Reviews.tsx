@@ -25,11 +25,7 @@ export const Reviews: React.FC<IProps> = (props) => {
   if (isLoading) {
     return (
       <div className={style.list}>
-        {Array(limit)
-          .fill("")
-          .map(() => (
-            <Laoder/>
-          ))}
+        <Laoder/>
       </div>
     );
   }
