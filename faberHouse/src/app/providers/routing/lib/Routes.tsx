@@ -16,6 +16,10 @@ import { RoutePath } from "shared/config/route-path";
 
 export const Routes: RouteProps[] = [
     {
+        path: '/',
+        element: <HomePageLazy/>
+    },
+    {
         path: RoutePath.HOME.fullPath,
         element: <HomePageLazy/>
     },

@@ -38,6 +38,7 @@ export const Paginator: React.FC<IProps> = (props) => {
   };
 
   const incrementPage = () => {
+    console.log(activePage, pageCount)
     if (activePage < pageCount) setActivePage((prev) => prev + 1);
   };
 
